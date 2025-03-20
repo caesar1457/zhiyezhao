@@ -537,27 +537,55 @@ img {
 }
 
 .skills__ros2 {
-  width: 45%;
-}
-
-.skills__css{
   width: 50%;
 }
 
-.skills__js{
+.skills__drake {
+  width: 40%;
+}
+
+.skills__gazebo{
+  width: 75%;
+}
+
+.skills__mujoco{
   width: 30%;
 }
 
-.skills__vue{
-  width: 10%;
+.skills__isaacSim{
+  width: 30%;
 }
 
-.skills__java{
-  width: 70%;
-}
-
-.skills__python{
+.skills__pybullet{
   width: 50%;
+}
+
+.skills__pytorch{
+  width: 50%;
+}
+
+.skills__machineLearning{
+  width: 50%;
+}
+
+.skills__deepLearning{
+  width: 60%;
+}
+
+.skills__reinforcementLearning{
+  width: 40%;
+}
+
+.skills__computerVision{
+  width: 40%;
+}
+
+.skills__imitationLearning{
+  width: 25%;
+}
+
+.skills__skillLearning{
+  width: 35%;
 }
 
 .skills__close .skills__list {
