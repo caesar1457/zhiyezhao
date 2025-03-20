@@ -532,8 +532,12 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
-  width: 60%;
+.skills__ros1 {
+  width: 80%;
+}
+
+.skills__ros2 {
+  width: 45%;
 }
 
 .skills__css{
