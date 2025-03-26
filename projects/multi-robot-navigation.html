@@ -65,21 +65,41 @@
     <script src="../assets/js/swiper-bundle.min.js"></script>
     <script src="../assets/js/jquery2.1.4.min.js"></script>
     <script src="../assets/js/jquery.i18n.min.js"></script>
-    <script src="../assets/js/main.js"></script>
     <script src="../assets/js/cn-en-translate-module.js"></script>
     <script src="../assets/js/iconfont.js"></script>
+    <script src="../assets/js/main.js"></script>
 
-    <!-- ✅ 动态加载 header + footer + 明暗切换 -->
+    <!-- ✅ 动态加载 header + footer + 功能初始化 -->
     <script>
+      // ✅ 初始化移动端菜单展开/收起逻辑
+      function initMobileMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        const navToggle = document.getElementById("nav-toggle");
+        const navClose = document.getElementById("nav-close");
+
+        if (navToggle) {
+          navToggle.addEventListener("click", () => {
+            navMenu.classList.add("show-menu");
+          });
+        }
+
+        if (navClose) {
+          navClose.addEventListener("click", () => {
+            navMenu.classList.remove("show-menu");
+          });
+        }
+      }
+
+      // ✅ 动态加载 header 后执行相关初始化
       fetch("../header.html")
         .then(res => res.text())
         .then(data => {
           document.getElementById("header-placeholder").innerHTML = data;
 
-          // ✅ 初始化中英文翻译
-          initI18n();
+          initMobileMenu();   // ☰ 展开、❌ 收起
+          initI18n();         // 🌐 翻译功能
 
-          // ✅ 初始化明暗模式切换
+          // 🌙 明暗主题切换
           const themeButton = document.getElementById("theme-button");
           const darkTheme = "dark-theme";
           const iconTheme = "uil-sun";
@@ -105,6 +125,7 @@
           });
         });
 
+      // ✅ 动态加载 footer
       fetch("../footer.html")
         .then(res => res.text())
         .then(data => {
