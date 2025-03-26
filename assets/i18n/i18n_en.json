@@ -6,11 +6,11 @@
     "contact":"contact",
     "home__title":"Hi, I'm Zhiye(Caesar) Zhao",
     "home__subtitle":"Robotics Engineer",
-    "home__description":"High level experience in Robotics and Artificial Intelligence, producing quality work.",
+    "home__description":"Experienced in Robotics and Artificial Intelligence projects, committed to delivering quality results.",
     "home__contact":"Contact Me",
     "home__scroll-name":"Scroll down",
     "about__title":"About Me",
-    "about__subtitle":"My introduction",
+    "about__subtitle":"Brief Introduction",
     "about__description":"I have hands-on experience in robotic motion control, path planning, state estimation, and vision processing, and am proficient in machine learning, deep learning, and reinforcement learning. Currently, I focus on embodied intelligence to enable more autonomous and flexible perception and decision-making in next-generation (humanoid) robots, driving further innovation and real-world adoption of robotics technology.",
     "about__info-name1":"Years of <br /> experience",
     "about__info-name2":"Completed <br /> projects",
@@ -27,14 +27,15 @@
     "education":"Education",
     "work":"Work",
     "qualification1__title":"Mechanical Design Manufacture and Automation",
-    "qualification1__subtitle":"Hunan Institute of Technology ",
+    "qualification1__subtitle":"Hunan Institute of Technology",
     "qualification2__title":"Master of Professional Engineering, Robotics ",
     "qualification2__subtitle":"University of Technology Sydney (UTS)",
     "qualification3__title":"Embodied intelligence",
     "qualification3__subtitle":"Self-Study",
 
     "qualification4__title":"Teaching Assistant & Research Assistant (Part time)",
-    "qualification4__subtitle":"Online, Part time",
+    "qualification4__subtitle":"Remote, Part-time",
+
 
     "qualification5__title":"Research & Development Engineer (Intern)",
     "qualification5__subtitle":"Optik Consultancy, Sydney",
@@ -42,7 +43,7 @@
     "portfolio__title":"Portfolio",
     "portfolio__subtitle":"Most recent works",
     "portfolio1__title":"Multi-Robot Navigation System",
-    "portfolio1__description":"This project is a multi-robot navigation system on Ubuntu 18.04 that utilizes TurtleBot. By integrating sensor fusion and path planning, it enables collaborative localization and autonomous navigation in shared environments.",
+    "portfolio1__description":"This project is a multi-robot navigation system based on Ubuntu 18.04 using TurtleBot robots. By integrating sensor fusion and path planning, it enables collaborative localization and autonomous navigation in shared environments.",
     "portfolio2__title":"Leader-Follower Formation Control with MPC",
     "portfolio2__description":"This project implements a multi-robot formation control system based on Model Predictive Control (MPC). By employing a leader-follower strategy, it ensures robust and stable group movement under dynamic conditions.",
     "portfolio3__title":"State Estimation for the ParCli Tripedal Climbing Robot",
@@ -53,10 +54,14 @@
     "portfolio5__description":"This project focuses on soil moisture estimation using multi-sensor fusion techniques. By integrating data from multiple sensors, it enhances measurement accuracy and reliability, providing real-time soil moisture analysis for environmental monitoring and precision agriculture.",    
     "contact__title":"Contact me",
     "contact__subtitle":"Get in touch",
-    "tel":"Call me",
+    "tel":"Tel",
     "tel__number":"166********",
     "email":"E-mail",
-    "email__address":"asoutherncat@gmail.com",
+    "email__address":"caesar1457@gmail.com",
     "location":"Location",
-    "location__detail":"HuNan , CHN"
+    "location__detail":"HangZhou , China",
+
+    "portfolio1__detail_title": "Multi-Robot Navigation System",
+    "portfolio1__detail_subtitle": "Detailed Project Overview"
+
 }

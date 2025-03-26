@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Robot Navigation | Caesar Zhao</title>
+
+    <!-- 样式保持一致 -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ✅ 页眉 -->
+    <div id="header-placeholder"></div>
+
+    <!-- ✅ 页面主体 -->
+    <main class="main">
+      <section class="section container">
+        <h2 class="section__title" i18n="portfolio1__title">Multi-Robot Navigation System</h2>
+        <span class="section__subtitle" i18n="portfolio1__detail_subtitle">Detailed Project Overview</span>
+
+        <div class="about__container container grid" style="margin-top: 2rem;">
+          <!-- 图像与视频 -->
+          <div>
+            <img
+              src="../assets/img/Multi-Robot Navigation System.png"
+              alt="screenshot"
+              class="about__img"
+            />
+            <video controls style="width: 100%; margin-top: 1rem; border-radius: 1rem;">
+              <source src="../assets/video/multi-robot-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- 文本说明 -->
+          <div class="about__data">
+            <p class="about__description">
+              This project is a multi-robot navigation system on Ubuntu 18.04 that utilizes TurtleBot.
+              By integrating sensor fusion and path planning, it enables collaborative localization and autonomous navigation in shared environments.
+            </p>
+            <ul class="about__info">
+              <li>✓ ROS 1 Navigation Stack</li>
+              <li>✓ Multi-robot coordination</li>
+              <li>✓ Sensor Fusion (AMCL + IMU)</li>
+              <li>✓ Global (Dijkstra) + Local (DWA) Planning</li>
+            </ul>
+
+            <div class="about__buttons" style="margin-top: 2rem;">
+              <a href="../index.html#portfolio" class="button button--flex">
+                ⬅ Back to Portfolio
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ✅ 页脚 -->
+    <div id="footer-placeholder"></div>
+
+    <!-- ✅ JavaScript 脚本区域 -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery2.1.4.min.js"></script>
+    <script src="../assets/js/jquery.i18n.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cn-en-translate-module.js"></script>
+    <script src="../assets/js/iconfont.js"></script>
+
+    <!-- ✅ 动态加载 header + footer + 明暗切换 -->
+    <script>
+      fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header-placeholder").innerHTML = data;
+
+          // ✅ 初始化中英文翻译
+          initI18n();
+
+          // ✅ 初始化明暗模式切换
+          const themeButton = document.getElementById("theme-button");
+          const darkTheme = "dark-theme";
+          const iconTheme = "uil-sun";
+
+          const selectedTheme = localStorage.getItem("selected-theme");
+          const selectedIcon = localStorage.getItem("selected-icon");
+
+          const getCurrentTheme = () =>
+            document.body.classList.contains(darkTheme) ? "dark" : "light";
+          const getCurrentIcon = () =>
+            themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+          if (selectedTheme) {
+            document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+            themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+          }
+
+          themeButton.addEventListener("click", () => {
+            document.body.classList.toggle(darkTheme);
+            themeButton.classList.toggle(iconTheme);
+            localStorage.setItem("selected-theme", getCurrentTheme());
+            localStorage.setItem("selected-icon", getCurrentIcon());
+          });
+        });
+
+      fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
