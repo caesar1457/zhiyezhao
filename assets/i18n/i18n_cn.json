@@ -6,7 +6,7 @@
     "contact": "联系方式",
   
     "home__title": "Hi，我是赵志业（Caesar）",
-    "home__subtitle": "机器人方向工程师",
+    "home__subtitle": "机器人工程师",
     "home__description": "专注于机器人与人工智能领域，致力于产出高质量的技术成果。",
     "home__contact": "与我联系",
     "home__scroll-name": "下滑查看更多",
@@ -53,7 +53,7 @@
     "portfolio4__title": "自动驾驶强化学习仿真环境",
     "portfolio4__description": "构建了用于自动驾驶研究的强化学习仿真环境，支持决策算法的训练与测试，促进智能驾驶策略的开发。",
     "portfolio5__title": "土壤湿度传感系统",
-    "portfolio5__description": "本项目通过多传感器融合技术实现土壤湿度的高精度估计，提供实时土壤监测与分析，服务于环境监测与精准农业场景。",
+    "portfolio5__description": "本项目为 MPT AgTech 自动播种平台开发了一套基于 EKF 滤波的数据融合湿度传感系统，通过整合多通道 ADC 采集数据，有效抑制噪声、提高测量稳定性，实现土壤湿度的高精度实时监测，助力农业自动化。",
   
     "contact__title": "联系方式",
     "contact__subtitle": "欢迎联系我",
@@ -65,7 +65,18 @@
     "location__detail": "杭州市",
     
     "portfolio1__detail_title": "多机器人导航系统",
-    "portfolio1__detail_subtitle": "详细项目概览"
+    "portfolio1__detail_subtitle": "详细项目概览",
 
+    "multirobot_title": "多机器人导航系统",
+    "multirobot_goalTitle": "项目目标",
+    "multirobot.goalDesc": "这是一个基于 ROS 的多机器人导航系统，运行于 TurtleBot3 与 Ubuntu 18.04 平台。该系统支持室内环境下的协同路径规划、实时定位与传感器融合，使多台机器人能够高效协作并避免碰撞。",
+    "multirobot.demoTitle": "演示展示",
+    "multirobot.demoDesc": "以下截图与视频展示了多台机器人在共享空间中协同导航的行为表现。",
+    "multirobot.methodsTitle": "实现方法",
+    "multirobot.method1": "✓ ROS 1 导航栈",
+    "multirobot.method2": "✓ 多机器人协调与任务分配",
+    "multirobot.method3": "✓ 使用 AMCL 与 IMU 数据进行传感器融合",
+    "multirobot.method4": "✓ 使用 Dijkstra 进行全局规划，DWA 进行局部规划",
+    "multirobot.back": "← 返回作品集"
   }
   

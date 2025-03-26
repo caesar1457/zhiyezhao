@@ -30,7 +30,7 @@
     "qualification1__subtitle":"Hunan Institute of Technology",
     "qualification2__title":"Master of Professional Engineering, Robotics ",
     "qualification2__subtitle":"University of Technology Sydney (UTS)",
-    "qualification3__title":"Embodied intelligence",
+    "qualification3__title":"Embodied Intelligence",
     "qualification3__subtitle":"Self-Study",
 
     "qualification4__title":"Teaching Assistant & Research Assistant (Part time)",
@@ -50,8 +50,8 @@
     "portfolio3__description":"This project focuses on state estimation for the ParCli tripedal climbing robot. Using multi-sensor fusion and Extended Kalman Filter (EKF), it improves localization accuracy and motion stability, enabling reliable climbing and navigation in complex environments.",
     "portfolio4__title":"Reinforcement Learning Environment for Autonomous Driving Simulation",
     "portfolio4__description":"This project provides a simulation environment for autonomous driving research using reinforcement learning. It enables testing and training of decision-making algorithms in a controlled environment, facilitating the development of intelligent driving policies.",
-    "portfolio5__title":"Soil Moisture Sensor",
-    "portfolio5__description":"This project focuses on soil moisture estimation using multi-sensor fusion techniques. By integrating data from multiple sensors, it enhances measurement accuracy and reliability, providing real-time soil moisture analysis for environmental monitoring and precision agriculture.",    
+    "portfolio5__title":"Soil Moisture Estimation via EKF-Based Multi-Sensor Fusion",
+    "portfolio5__description":"Developed for use in MPT AgTech's autonomous seeding platform, this soil moisture sensing module leverages EKF-based sensor fusion to deliver stable and accurate moisture estimates in real time, even under environmental noise and hardware limitations.",    
     "contact__title":"Contact me",
     "contact__subtitle":"Get in touch",
     "tel":"Tel",
@@ -61,7 +61,18 @@
     "location":"Location",
     "location__detail":"HangZhou , China",
 
-    "portfolio1__detail_title": "Multi-Robot Navigation System",
-    "portfolio1__detail_subtitle": "Detailed Project Overview"
+    "multirobot": {
+        "title": "Multi-Robot Navigation System",
+        "goalTitle": "Project Goal",
+        "goalDesc": "A ROS-based multi-robot navigation system built on TurtleBot3 and Ubuntu 18.04. The system supports collaborative path planning, real-time localization, and sensor fusion in indoor environments, enabling multiple robots to navigate efficiently while avoiding collisions.",
+        "demoTitle": "Demonstration",
+        "demoDesc": "The following screenshots and video demonstrate the coordinated behavior of multiple robots navigating a shared indoor space.",
+        "methodsTitle": "Methods",
+        "method1": "✓ ROS 1 Navigation Stack",
+        "method2": "✓ Multi-Robot Coordination and Task Assignment",
+        "method3": "✓ Sensor Fusion using AMCL and IMU data",
+        "method4": "✓ Global Planning with Dijkstra, Local Planning with DWA",
+        "back": "← Return to Portfolio"
+      }
 
 }

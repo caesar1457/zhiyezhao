@@ -696,7 +696,7 @@ img {
 }
 
 .portfolio__img {
-  width: 265px;
+  width: 300px;
   border-radius: .5rem;
   justify-self: center;
 }
@@ -1193,4 +1193,115 @@ img {
   .contact__inputs {
       grid-template-columns: repeat(2, 1fr);
   }
+}
+
+/* ===== 子页面专用样式 ===== */
+
+:root {
+  --subpage-text-color: #333333;
+  --card-bg: #fff4e6;
+}
+
+.dark-theme {
+  --card-bg: #F1E7E7;
+  --subpage-text-color: #333333; /* ✅ 保持深色不变 */
+}
+
+
+.subpage-section {
+  background-color: var(--card-bg);
+  color: var(--subpage-text-color);
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 960px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.subpage-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  padding-top: 2rem; /* ✅ 添加这一行（可调） */
+  color: var(--subpage-text-color);
+}
+
+
+
+.subpage-subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--subpage-text-color);
+}
+
+.subpage-desc {
+  font-size: 1.1rem;
+  color: var(--subpage-text-color);
+  font-weight: 400;
+  line-height: 1.75;
+  max-width: 760px;
+  margin: 0 auto 2rem auto;
+}
+
+.subpage-img,
+.subpage-video {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 1rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+.subpage-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto;
+  max-width: 600px;
+}
+
+.subpage-list li {
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: var(--subpage-text-color);
+}
+
+.subpage-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.subpage-img-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* 保证在小屏自动换行 */
+  margin-bottom: 2rem;
+}
+
+.subpage-img-row .subpage-img {
+  flex: 1 1 320px;
+  max-width: 440px;
+  height: auto;
+}
+
+.subpage-img {
+  max-width: 100%;
+  max-height: 650px; /* ✅ 限制最大高度 */
+  height: auto;
+  object-fit: contain; /* 避免图片拉伸 */
+  border-radius: 1rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+.portfolio__img-small {
+  max-height: 300px;   /* 或者你想要的具体值 */
+  width: auto;
+  object-fit: contain;
 }
