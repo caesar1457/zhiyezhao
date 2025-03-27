@@ -18,50 +18,52 @@
     <!-- ✅ 项目内容区块 -->
     <main class="main">
 
-      <!-- 📛 项目名称 + 简介 -->
-      <section class="subpage-section">
-        <h1 class="subpage-title">Leader-Follower Formation Control with MPC</h1>
-        <h2 class="subpage-subtitle">Project Goal</h2>
-        <p class="subpage-desc">
-          This project implements a leader-follower formation control system using Model Predictive Control (MPC).
-          The goal is to enable multiple robots to follow a designated leader while maintaining formation and avoiding collisions in dynamic environments.
-        </p>
-      </section>
-      
-      
-      <!-- 📈 结果展示 -->
-      <section class="subpage-section">
-        <h2 class="subpage-subtitle">Demonstration</h2>
-        <p class="subpage-desc">
-          The simulation shows how follower robots track the leader and preserve formation using centralized MPC. 
-          The system maintains real-time coordination even with sudden turns and disturbances.
-        </p>
+    <!-- 📛 项目名称 + 简介 -->
+    <section class="subpage-section">
+      <h1 class="subpage-title" i18n="mpc_title">Leader-Follower Formation Control with MPC</h1>
+      <h2 class="subpage-subtitle" i18n="mpc_goalTitle">Project Overview</h2>
+      <p class="subpage-desc" i18n="mpc_goalDesc">
+        This project implements a centralized leader-follower formation control system using Model Predictive Control (MPC) in MATLAB...
+      </p>
+    </section>
 
-        <video controls class="subpage-video">
-          <source src="../assets/video/MPC.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="subpage-img-row">
-          <img src="../assets/img/final_2.png" alt="Formation Snapshot 1" class="subpage-img" />
-          <img src="../assets/img/final_1.png" alt="Formation Snapshot 2" class="subpage-img" />
-        </div>
-      </section>
-      
-      
+    <!-- 📈 结果展示 -->
+    <section class="subpage-section">
+      <h2 class="subpage-subtitle" i18n="mpc_demoTitle">Demonstration</h2>
+      <p class="subpage-desc" i18n="mpc_demoDesc">
+        The video below demonstrates how follower robots maintain coordinated formation using MPC...
+      </p>
 
-      <!-- 🛠 方法 -->
-      <section class="subpage-section">
-        <h2 class="subpage-subtitle">Methods</h2>
-        <ul class="subpage-list">
-          <li>✓ Centralized MPC formulation for leader-follower trajectory control</li>
-          <li>✓ Formation geometry constraints encoded into the cost function</li>
-          <li>✓ Inter-robot collision avoidance through distance constraints</li>
-          <li>✓ Real-time control loop implemented in Python using a multi-agent simulator</li>
-        </ul>
-        <div class="subpage-button-wrapper">
-          <a href="../index.html#portfolio" class="button button--flex">⬅ Back to Portfolio</a>
-        </div>
-      </section>
+      <video controls class="subpage-video">
+        <source src="../assets/video/MPC.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- 🖼️ 图像说明段落 -->
+      <p class="subpage-desc" i18n="mpc_imageDesc">
+        The figures below show the complete motion trajectories of the robot team after executing formation control...
+      </p>
+
+      <div class="subpage-img-row">
+        <img src="../assets/img/final_2.png" alt="Formation Snapshot 1" class="subpage-img" />
+        <img src="../assets/img/final_1.png" alt="Formation Snapshot 2" class="subpage-img" />
+      </div>
+    </section>
+
+    <!-- 🛠 方法 -->
+    <section class="subpage-section">
+      <h2 class="subpage-subtitle" i18n="mpc_methodsTitle">Core Techniques</h2>
+      <ul class="subpage-list methods-list">
+        <li i18n="mpc_method1">✓ Designed a centralized MPC framework for real-time formation control</li>
+        <li i18n="mpc_method2">✓ Encoded formation geometry and tracking objectives into the cost function</li>
+        <li i18n="mpc_method3">✓ Integrated collision avoidance using inter-agent and obstacle constraints</li>
+        <li i18n="mpc_method4">✓ Verified system stability through simulation in MATLAB under complex scenarios</li>
+      </ul>
+      <div class="subpage-button-wrapper">
+        <a href="../index.html#portfolio" class="button button--flex" i18n="mpc_back">⬅ Back to Portfolio</a>
+      </div>
+    </section>
+
       
       
 

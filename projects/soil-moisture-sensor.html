@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soil Moisture Estimation via EKF-Based Multi-Sensor Fusion | Caesar Zhao</title>
+    <title>Soil Moisture Estimation via EKF-Based Sensor Fusion | Caesar Zhao</title>
 
     <!-- 样式引用 -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
@@ -20,21 +20,18 @@
 
       <!-- 📛 项目名称 + 简介 -->
       <section class="subpage-section">
-        <h1 class="subpage-title">Soil Moisture Estimation via EKF-Based Multi-Sensor Fusion</h1>
-        <h2 class="subpage-subtitle">Project Goal</h2>
-        <p class="subpage-desc">
-          Developed for use in MPT AgTech's autonomous seeding platform, this soil moisture sensing module leverages EKF-based sensor fusion to deliver stable and accurate moisture estimates in real time, even under environmental noise and hardware limitations.
+        <h1 class="subpage-title" i18n="soilmoisture_title">Soil Moisture Estimation System</h1>
+        <h2 class="subpage-subtitle" i18n="soilmoisture_goalTitle">Project Goal</h2>
+        <p class="subpage-desc" i18n="soilmoisture_goalDesc">
+          This project develops a robust soil moisture sensing system for MPT AgTech's autonomous seeding platform. At its core is a real-time estimation algorithm based on the Extended Kalman Filter (EKF), which I independently designed and implemented during my internship at Optik Consultancy. The system ensures accurate, stable readings under noisy and uncertain agricultural conditions.
         </p>
       </section>
 
-      <!-- 📈 结果展示 -->
+      <!-- 📈 系统演示 -->
       <section class="subpage-section">
-        <h2 class="subpage-subtitle">Demonstration</h2>
-
-        <p class="subpage-desc">
-          The video below illustrates the real-time performance of an EKF-based soil moisture estimation algorithm 
-          developed independently for MPT AgTech's autonomous seeding vehicle. The algorithm filters noisy sensor data 
-          to produce smooth and reliable moisture readings, suitable for deployment in dynamic agricultural environments.
+        <h2 class="subpage-subtitle" i18n="soilmoisture_demoTitle">Demonstration</h2>
+        <p class="subpage-desc" i18n="soilmoisture_demoDesc">
+          The video below showcases the real-time performance of the EKF-based soil moisture estimation system. The project was publicly demonstrated at the University of Technology Sydney and received direct recognition from MPT AgTech representatives, who praised its accuracy, robustness, and seamless integration.
         </p>
 
         <video controls class="subpage-video">
@@ -42,25 +39,27 @@
           Your browser does not support the video tag.
         </video>
 
-        <img src="../assets/img/senor_feedback.png" alt="Demo Screenshot" class="subpage-img" />
-        <p class="subpage-desc">
-          The project received <a href="https://www.linkedin.com/feed/update/urn:li:activity:7295927342361628672/?actorCompanyId=75593246" target="_blank" rel="noopener noreferrer">
-          high recognition</a> from <a href="https://mpt.ag/" target="_blank" rel="noopener noreferrer">MPT AgTech</a> 
-          for its robustness, accuracy, and seamless integration. The EKF filtering pipeline was designed and implemented entirely by me, 
-          with emphasis on environmental adaptability and signal stability in real-world field deployment.
+        <p class="subpage-desc" i18n="soilmoisture_feedbackIntro">
+          The image below is a <a href="https://www.linkedin.com/feed/update/urn:li:activity:7295927342361628672/?actorCompanyId=75593246" target="_blank" rel="noopener noreferrer">LinkedIn post</a> shared by an engineer at 
+          <a href="https://mpt.ag/" target="_blank" rel="noopener noreferrer">MPT AgTech</a>, 
+          highlighting the performance and team effort behind this project. 
+          It reflects the recognition our solution received after the demonstration, and lists all core contributors, including myself.
         </p>
+
+        <img src="../assets/img/senor_feedback.png" alt=" " class="subpage-img" />
       </section>
 
-      <!-- 🛠 方法 -->
+      <!-- 🛠 技术方法 -->
       <section class="subpage-section">
-        <h2 class="subpage-subtitle">Methods</h2>
-        <ul class="subpage-list">
-          <li>✓ Designed and implemented a real-time soil moisture estimation algorithm based on the Extended Kalman Filter (EKF)</li>
-          <li>✓ Integrated multiple sensor data streams to enhance signal stability and estimation accuracy</li>
-          <li>✓ Tuned filter parameters to handle environmental noise and non-ideal hardware conditions</li>
+        <h2 class="subpage-subtitle" i18n="soilmoisture_methodsTitle">Core Techniques</h2>
+        <ul class="subpage-list methods-list">
+          <li i18n="soilmoisture_method1">✓ Designed and implemented a real-time EKF-based soil moisture estimation pipeline</li>
+          <li i18n="soilmoisture_method2">✓ Filtered sensor signals under real-world noise and environmental fluctuations</li>
+          <li i18n="soilmoisture_method3">✓ Calibrated and tuned the filter for hardware non-idealities and field deployment</li>
+          <li i18n="soilmoisture_method4">✓ Validated and praised by MPT AgTech engineers in live demonstration</li>
         </ul>
         <div class="subpage-button-wrapper">
-          <a href="../index.html#portfolio" class="button button--flex">Back to Portfolio</a>
+          <a href="../index.html#portfolio" class="button button--flex" i18n="soilmoisture_back">← Return to Portfolio</a>
         </div>
       </section>
 

@@ -1305,3 +1305,17 @@ img {
   width: auto;
   object-fit: contain;
 }
+
+.methods-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* 让整体居中 */
+  width: fit-content;
+  text-align: left;
+}
+
+.methods-list li {
+  text-indent: -1.2em;       /* 把 ✓ 拉到左边 */
+  padding-left: 1.5em;       /* 给 ✓ 留位置 */
+  line-height: 1.8;
+}

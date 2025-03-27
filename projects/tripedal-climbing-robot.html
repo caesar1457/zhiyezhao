@@ -20,42 +20,44 @@
 
       <!-- 📛 项目名称 + 简介 -->
       <section class="subpage-section">
-        <h1 class="subpage-title">Tripedal Climbing Robot</h1>
-        <h2 class="subpage-subtitle">Project Goal</h2>
-        <p class="subpage-desc">
+        <h1 class="subpage-title" i18n="parcli_title">Tripedal Climbing Robot</h1>
+        <h2 class="subpage-subtitle" i18n="parcli_goalTitle">Project Overview</h2>
+        <p class="subpage-desc" i18n="parcli_goalDesc">
           This project focuses on state estimation and control of a custom-designed tripedal climbing robot. 
-          The robot is capable of traversing complex vertical surfaces using coordinated limb motions. The system integrates 
-          advanced state estimation techniques, including an Extended Kalman Filter (EKF), to maintain real-time balance and 
-          body awareness in dynamic environments.
+          I developed and implemented an Extended Kalman Filter (EKF) that fuses IMU and encoder data to estimate body position, velocity, and orientation. These estimations are crucial for enabling real-time stability, control, and climbing in complex vertical environments.
         </p>
       </section>
 
       <!-- 📈 结果展示 -->
       <section class="subpage-section">
-        <h2 class="subpage-subtitle">Demonstration</h2>
+        <h2 class="subpage-subtitle" i18n="parcli_demoTitle">Demonstration</h2>
 
-        <p class="subpage-desc">
-          The video and image below showcase the robot's climbing behavior in simulation, including trajectory tracking, body orientation control, 
-          and foot placement strategies. The robot maintains stability while adapting to surface curvature and disturbances through real-time state feedback.
+        <p class="subpage-desc" i18n="parcli_demoDesc">
+          The following video and image showcase the robot's climbing behavior in simulation, including trajectory tracking, orientation control, and foot placement strategies. The EKF allows the robot to maintain balance while adapting to surface curvature and external disturbances.
         </p>
 
         <video controls class="subpage-video">
           <source src="../assets/video/Parlic.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <p class="subpage-desc" i18n="parcli_realIntro">
+          A physical prototype of the tripedal climbing robot was also developed to evaluate the estimation method on hardware. 
+          The image below shows the assembled robot with onboard sensors and actuators used in testing.
+        </p>
         <img src="../assets/img/ParCli.png" alt="Demo Screenshot" class="subpage-img" />
       </section>
 
       <!-- 🛠 方法 -->
       <section class="subpage-section">
-        <h2 class="subpage-subtitle">Methods</h2>
-        <ul class="subpage-list">
-          <li>✓ Implemented an Extended Kalman Filter (EKF) for real-time state estimation, including body position, velocity, and orientation</li>
-          <li>✓ Developed a custom dynamics and kinematics model tailored for tripedal locomotion</li>
-          <li>✓ Simulated and visualized robot behavior using MATLAB and PyDrake to validate control strategies</li>
+        <h2 class="subpage-subtitle" i18n="parcli_methodsTitle">Core Techniques</h2>
+        <ul class="subpage-list methods-list">
+          <li i18n="parcli_method1">✓ Developed an Extended Kalman Filter (EKF) for real-time state estimation (position, velocity, orientation)</li>
+          <li i18n="parcli_method2">✓ Fused IMU and encoder data to estimate body motion under dynamic conditions</li>
+          <li i18n="parcli_method3">✓ Designed a dynamics and kinematics model tailored to tripedal locomotion</li>
+          <li i18n="parcli_method4">✓ Simulated and visualized the robot using MATLAB and PyDrake to verify estimation results</li>
         </ul>
         <div class="subpage-button-wrapper">
-          <a href="../index.html#portfolio" class="button button--flex">Back to Portfolio</a>
+          <a href="../index.html#portfolio" class="button button--flex" i18n="parcli_back">← Return to Portfolio</a>
         </div>
       </section>
 
