@@ -427,7 +427,10 @@ img {
 }
 
 .about__description {
-  text-align: center;
+  max-width: 60ch;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 1.5rem;
   margin-bottom: var(--mb-2-5);
 
 }
@@ -1351,4 +1354,88 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+.about__container {
+
+  align-items: center; /* 🔥 让右侧内容上下居中 */
+
+}
+
+.about__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_me_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%; /* 🟢 确保有足够宽度让内容居中 */
+}
+
+
+.about__hobbies {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.about__hobby-title {
+  font-size: 1rem;
+  font-weight: var(--font-medium);
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.about__hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.hobby__item {
+  text-align: center;
+}
+
+.hobby__item i {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.hobby__icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.3rem;
+  display: block;            /* 🔑 让图片在垂直方向上变成块级 */
+  margin-left: auto;         /* 🔑 水平居中 */
+  margin-right: auto;        /* 🔑 水平居中 */
+}
+
+
+.skills__name-with-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 控制图标和文字之间的距离 */
+}
+
+.view-report-link {
+  font-size: 0.85rem;
+  color: var(--first-color);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }

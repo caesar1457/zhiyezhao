@@ -91,12 +91,12 @@
           <div class="home__content grid">
             <div class="home__social">
               <a
-                href="https://gitee.com/asoutherncat/"
+                href="https://www.linkedin.com/in/zhiye-zhao/"
                 target="_blank"
                 class="home__social-icon"
               >
-                <!-- <i class="uil uil-linkedin-alt"></i> -->
-                <svg
+                <i class="uil uil-linkedin-alt"></i>
+                <!-- <svg
                   t="1674798484640"
                   viewBox="0 0 1024 1024"
                   version="1.1"
@@ -108,10 +108,10 @@
                     fill="hsl(250deg 69% 61%)"
                     p-id="2758"
                   ></path>
-                </svg>
+                </svg> -->
               </a>
               <a
-                href="http://github.com"
+                href="https://github.com/caesar1457"
                 target="_blank"
                 class="home__social-icon"
               >
@@ -123,7 +123,7 @@
                 class="home__social-icon"
               >
                 <!-- <i class="uil uil-dribbble"></i> -->
-                <svg
+                <!-- <svg
                   t="1674801734735"
                   viewBox="0 0 1024 1024"
                   version="1.1"
@@ -135,7 +135,7 @@
                     fill="hsl(250deg 69% 61%)"
                     p-id="4125"
                   ></path>
-                </svg>
+                </svg> -->
               </a>
             </div>
 
@@ -203,65 +203,103 @@
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <h2 class="section__title" i18n="about__title">About Me</h2>
-        <span class="section__subtitle" i18n="about__subtitle"
-          >My introduction</span
-        >
-        <div class="about__container container grid">
-          <img src="assets/img/aboutme.png" alt="" class="about__img" />
+        <span class="section__subtitle" i18n="about__subtitle">My introduction</span>
 
+        <div class="about__container container grid">
+          
+          <!-- 左侧图片 + 兴趣 -->
+          <div class="about__left">
+            <img src="assets/img/aboutme.png" alt="" class="about__img" />
+
+            <!-- 🎯 Personal Hobbies -->
+            <div class="about__hobbies">
+              <h3 class="about__hobby-title" i18n="about__hobby_title">Personal Interests</h3>
+              <div class="about__hobby-grid">
+
+                <div class="hobby__item">
+                  <img src="assets/img/icons/Philosophy.png" alt="Philosophy" class="hobby__icon" />
+                  <span i18n="hobbies__philosophy">Philosophy</span>
+                </div>
+
+                <div class="hobby__item">
+                  <img src="assets/img/icons/guqin.png" alt="Mathematics" class="hobby__icon" />
+                  <span i18n="hobbies__guqin">Guqin</span>
+                </div>
+
+                <div class="hobby__item">
+                  <img src="assets/img/icons/Math.png" alt="Mathematics" class="hobby__icon" />
+                  <span i18n="hobbies__math">Mathematics</span>
+                </div>
+
+                <div class="hobby__item">
+                  <img src="assets/img/icons/BJJ.png" alt="Brazilian Jiu-Jitsu" class="hobby__icon" />
+                  <span i18n="hobbies__bjj">Brazilian Jiu-Jitsu</span>
+                </div>
+
+                <div class="hobby__item">
+                  <img src="assets/img/icons/Literature.png" alt="Filipino Stick Fighting" class="hobby__icon" />
+                  <span i18n="hobbies__reading">Literature</span>
+                </div>
+
+                <div class="hobby__item">
+                  <img src="assets/img/icons/PMA.png" alt="Filipino Stick Fighting" class="hobby__icon" />
+                  <span i18n="hobbies__stick">Filipino Stick Fighting</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- 右侧介绍内容 -->
           <div class="about__data">
             <p class="about__description" i18n="about__description">
-              I have hands-on experience in robotic motion control, path planning, 
-              state estimation, and vision processing, and am proficient in machine learning, 
-              deep learning, and reinforcement learning. Currently, I focus on embodied 
-              intelligence to enable more autonomous and flexible perception and decision-making 
-              in next-generation (humanoid) robots, driving further innovation and real-world 
-              adoption of robotics technology.
-            </p>
+              I have extensive experience in developing robotic systems, with expertise in path planning, multi-sensor fusion, state estimation, motion control, and vision processing. I’m capable of managing the full development cycle—from algorithm design to simulation and deployment.
+              </p>
+              
+              <p class="about__description" i18n="about__description2">
+              Currently, I focus on embodied intelligence, where I explore how reinforcement learning and perception-decision models can enhance the autonomy and adaptability of next-generation humanoid robots.
+              </p>
+              
+              <p class="about__description" i18n="about__description3">
+              My goal is to promote the real-world adoption of robotics technology in industrial and service scenarios.
+              </p>
 
             <div class="about__info">
               <div>
                 <span class="about__info-title">02+</span>
-                <span class="about__info-name" i18n="about__info-name1"
-                  >Years of <br />
-                  experience</span
-                >
+                <span class="about__info-name" i18n="about__info-name1">
+                  Years of <br />experience
+                </span>
               </div>
-
               <div>
                 <span class="about__info-title">10+</span>
-                <span class="about__info-name" i18n="about__info-name2"
-                  >Completed <br />
-                  projects</span
-                >
+                <span class="about__info-name" i18n="about__info-name2">
+                  Completed <br />projects
+                </span>
               </div>
-
               <div>
                 <span class="about__info-title">02+</span>
-                <span class="about__info-name" i18n="about__info-name3"
-                  >Companies <br />
-                  worked</span
-                >
+                <span class="about__info-name" i18n="about__info-name3">
+                  Companies <br />worked
+                </span>
               </div>
             </div>
 
-            <div class="about__buttons">
-              <a
-                download=""
-                href="assets/pdf/Major_job.pdf"
-                class="button button--flex"
-              >
-                <span i18n="download">Download CV</span
-                ><i class="uil uil-download-alt button__icon"></i>
+            <div class="about_me_buttons">
+              <a download href="assets/pdf/Major_job.pdf" class="button button--flex">
+                <span i18n="download">Download CV</span>
+                <i class="uil uil-download-alt button__icon"></i>
               </a>
             </div>
           </div>
         </div>
       </section>
 
+
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
-        <h2 class="section__title" i18n="skills__title">Skills</h2>
+        <h2 class="section__title" i18n="skills__title">Technical Skill</h2>
         <span class="section__subtitle" i18n="skills__subtitle"
           >My technical level</span
         >
@@ -274,7 +312,7 @@
                 <i class="uil uil-robot skills__icon"></i>
 
                 <div>
-                  <h1 class="skills__title" i18n="home__subtitle">
+                  <h1 class="skills__title" i18n="home1__subtitle">
                     Robotics Engineer
                   </h1>
                   <span class="skills__subtitle" i18n="skills__years"
@@ -286,76 +324,82 @@
               </div>
 
               <div class="skills__list grid">
+
+                <!-- Proficient -->
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">ROS1</h3>
-                    <span class="skills__number">80%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__ros1"></div>
+                    <div class="skills__percentage skills__ros1" style="width: 95%;"></div>
                   </div>
                 </div>
-
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">ROS2</h3>
-                    <span class="skills__number">50%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__ros2"></div>
+                    <div class="skills__percentage skills__ros2" style="width: 95%;"></div>
                   </div>
                 </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Drake</h3>
-                    <span class="skills__number">40%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <div class="skills__percentage skills__drake"></div>
-                  </div>
-                </div>
-
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Gazebo / Ignition Gazebo</h3>
-                    <span class="skills__number">75%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__gazebo"></div>
+                    <div class="skills__percentage skills__gazebo" style="width: 95%;"></div>
                   </div>
                 </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Mujoco</h3>
-                    <span class="skills__number">30%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <div class="skills__percentage skills__mujoco"></div>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Isaac Sim</h3>
-                    <span class="skills__number">30%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <div class="skills__percentage skills__isaacSim"></div>
-                  </div>
-                </div>
-
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">PyBullet</h3>
-                    <span class="skills__number">50%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__pybullet"></div>
+                    <div class="skills__percentage skills__pybullet" style="width: 95%;"></div>
                   </div>
                 </div>
+              
+                <!-- Skilled -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Drake</h3>
+                    <span class="skills__number" i18n="softskills__level_skilled">Skilled</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__drake" style="width: 65%;"></div>
+                  </div>
+                </div>
+              
+                <!-- Competent -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Mujoco</h3>
+                    <span class="skills__number" i18n="softskills__level_competent">Competent</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__mujoco" style="width: 30%;"></div>
+                  </div>
+                </div>
+              
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Isaac Sim</h3>
+                    <span class="skills__number" i18n="softskills__level_competent">Competent</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__isaacSim" style="width: 30%;"></div>
+                  </div>
+                </div>
+              
               </div>
+              
             </div>
             <!--==================== SKILLS 2 ====================-->
             <div class="skills__content skills__close">
@@ -375,84 +419,166 @@
               </div>
 
               <div class="skills__list grid">
-                <!-- PyTorch -->
+                <!-- Proficient -->
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">PyTorch</h3>
-                    <span class="skills__number">50%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__pytorch"></div>
+                    <div class="skills__percentage skills__pytorch" style="width: 95%;"></div>
                   </div>
                 </div>
-            
-                <!-- Machine Learning -->
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Machine Learning</h3>
-                    <span class="skills__number">50%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__machineLearning"></div>
+                    <div class="skills__percentage skills__machineLearning" style="width: 95%;"></div>
                   </div>
                 </div>
-            
-                <!-- Deep Learning -->
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Deep Learning</h3>
-                    <span class="skills__number">60%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__deepLearning"></div>
+                    <div class="skills__percentage skills__deepLearning" style="width: 95%;"></div>
                   </div>
                 </div>
-            
-                <!-- Reinforcement Learning -->
-                <div class="skills__data">
-                  <div class="skills__titles">
-                    <h3 class="skills__name">Reinforcement Learning</h3>
-                    <span class="skills__number">40%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <div class="skills__percentage skills__reinforcementLearning"></div>
-                  </div>
-                </div>
-            
-                <!-- Computer Vision -->
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Computer Vision</h3>
-                    <span class="skills__number">40%</span>
+                    <span class="skills__number" i18n="softskills__level_proficient">Proficient</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__computerVision"></div>
+                    <div class="skills__percentage skills__computerVision" style="width: 95%;"></div>
                   </div>
                 </div>
-            
-                <!-- Imitation Learning -->
+              
+                <!-- Skilled -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Reinforcement Learning</h3>
+                    <span class="skills__number" i18n="softskills__level_skilled">Skilled</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__reinforcementLearning" style="width: 65%;"></div>
+                  </div>
+                </div>
+              
+                <!-- Competent -->
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Imitation Learning</h3>
-                    <span class="skills__number">25%</span>
+                    <span class="skills__number" i18n="softskills__level_competent">Competent</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__imitationLearning"></div>
+                    <div class="skills__percentage skills__imitationLearning" style="width: 30%;"></div>
                   </div>
                 </div>
-            
-                <!-- Skill Learning (ACT) -->
+              
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Skill Learning (ACT)</h3>
-                    <span class="skills__number">35%</span>
+                    <span class="skills__number" i18n="softskills__level_competent">Competent</span>
                   </div>
                   <div class="skills__bar">
-                    <div class="skills__percentage skills__skillLearning"></div>
+                    <div class="skills__percentage skills__skillLearning" style="width: 30%;"></div>
                   </div>
                 </div>
               </div>
+              
+                        
             </div>
+            <!--==================== SKILLS 3 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-comment-alt-lines skills__icon"></i>
+                <div>
+                  <h1 class="skills__title" i18n="skills__title3">Soft Skills</h1>
+                  <span class="skills__subtitle" i18n="skills__years3">Improved through projects and teamwork</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <!-- Skill 1: Sustainable Engineering Thinking -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name-with-link">
+                      <h3 class="skills__name" i18n="softskills__sustainability">Sustainable Engineering Thinking</h3>
+                      <a href="assets/pdf/Principles of Sustainability to Create.pdf"
+                         target="_blank" class="view-report-link">
+                        <i class="uil uil-eye"></i>
+                        <span class="skills__view-report" i18n="softskills__view_report">View Report</span>
+                      </a>
+                    </div>
+                    <span class="skills__level" i18n="softskills__level_proficient">Proficient</span>
+                  </div>                  
+                  <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 95%"></div>
+                  </div>
+                </div>
+              
+                <!-- Skill 2: Intercultural Communication -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <div class="skills__name-with-link">
+                      <h3 class="skills__name" i18n="softskills__intercultural">Intercultural Communication</h3>
+                      <a href="assets/pdf/Professional Practice Within Intercultural and Global Contexts.pdf"
+                         target="_blank" class="view-report-link">
+                        <i class="uil uil-eye"></i>
+                        <span class="skills__view-report" i18n="softskills__view_report">View Report</span>
+                      </a>
+                    </div>
+                    <span class="skills__level" i18n="softskills__level_proficient">Proficient</span>
+                  </div>                  
+                  <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 95%"></div>
+                  </div>
+                </div>
+              
+                <!-- Skill 3: Analytical Problem Solving -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="softskills__problem_solving">Analytical Problem Solving</h3>
+                    <span class="skills__level" i18n="softskills__level_proficient">Proficient</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 95%"></div>
+                  </div>
+                </div>
+              
+                <!-- Skill 4: Project Leadership -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="softskills__leadership">Project Leadership</h3>
+                    <span class="skills__level" i18n="softskills__level_skilled">Skilled</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 65%"></div>
+                  </div>
+                </div>
+              
+                <!-- Skill 5: Time Management -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name" i18n="softskills__time">Time Management</h3>
+                    <span class="skills__level" i18n="softskills__level_skilled">Skilled</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+              
+
+            
       </section>
 
       <!--==================== QUALIFICATION ====================-->
@@ -891,19 +1017,28 @@
           </ul>
 
           <div class="footer__socials">
-            <a href="https://gitee.com/asoutherncat/" target="_blank">
-              <svg class="icon footer__social" aria-hidden="true">
-                <use xlink:href="#icon-gitee"></use>
+            <a href="https://www.linkedin.com/in/zhiye-zhao" target="_blank" class="footer__social-icon" aria-label="LinkedIn"  style="margin-right: 1rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 
+                2.239 5 5 5h14c2.761 0 5-2.239 
+                5-5v-14c0-2.761-2.239-5-5-5zm-11 
+                19h-3v-10h3v10zm-1.5-11.268c-.966 
+                0-1.75-.79-1.75-1.764s.784-1.764 
+                1.75-1.764 1.75.79 
+                1.75 1.764-.784 1.764-1.75 
+                1.764zm13.5 
+                11.268h-3v-5.604c0-1.337-.026-3.063-1.871-3.063-1.872 
+                0-2.159 1.462-2.159 
+                2.971v5.696h-3v-10h2.881v1.367h.041c.401-.758 
+                1.381-1.559 
+                2.841-1.559 3.04 0 3.603 2.001 3.603 
+                4.604v5.588z"/>
               </svg>
             </a>
-            <a href="http://github.com" target="_blank">
+
+            <a href="https://github.com/caesar1457" target="_blank">
               <svg class="icon footer__social" aria-hidden="true">
                 <use xlink:href="#icon-github"></use>
-              </svg>
-            </a>
-            <a href="https://t.bilibili.com/" target="_blank">
-              <svg class="icon footer__social" aria-hidden="true">
-                <use xlink:href="#icon-bilibili-line"></use>
               </svg>
             </a>
           </div>
