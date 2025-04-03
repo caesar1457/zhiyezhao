@@ -56,6 +56,7 @@
     "mpc_method2": "✓ Encoded formation geometry and tracking objectives into the cost function",
     "mpc_method3": "✓ Integrated collision avoidance using inter-agent and obstacle constraints",
     "mpc_method4": "✓ Verified system stability through simulation in MATLAB under complex scenarios",
+    "mpc_githubLink": "💻 View on GitHub",
     "mpc_back": "← Return to Portfolio",
     
     "portfolio3__title": "State Estimation for the Tripedal Climbing Robot",
@@ -87,6 +88,8 @@
     "multirobot_method2": "✓ Global planning with Dijkstra, local planning with DWA",
     "multirobot_method3": "✓ Real-time localization with AMCL and laser scan matching",
     "multirobot_method4": "✓ Multi-robot coordination using ROS namespaces and tf tree separation",
+    "multirobot_downloadPDF": "📄 View Report",
+    "multirobot_githubLink": "💻 View on GitHub",
     "multirobot_back": "← Return to Portfolio",
 
     "portfolio5__title":"Soil Moisture Estimation via EKF-Based Sensor Fusion",
@@ -102,8 +105,8 @@
     "soilmoisture_method2": "✓ Filtered sensor signals under real-world noise and environmental fluctuations",
     "soilmoisture_method3": "✓ Calibrated and tuned the filter for hardware non-idealities and field deployment",
     "soilmoisture_method4": "✓ Validated and praised by MPT AgTech engineers in live demonstration",
-  
     "soilmoisture_back": "← Return to Portfolio",
+
     "contact__title":"Contact me",
     "contact__subtitle":"Get in touch",
     "tel":"Tel",

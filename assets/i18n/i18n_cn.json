@@ -57,6 +57,7 @@
     "mpc_method2": "✓ 在代价函数中嵌入队形约束与轨迹跟踪目标",
     "mpc_method3": "✓ 结合机器人间与障碍物的动态避障约束",
     "mpc_method4": "✓ 在复杂场景下使用 MATLAB 仿真验证系统稳定性",
+    "mpc_githubLink": "💻 查看 GitHub",
     "mpc_back": "← 返回作品集",
 
     "portfolio3__title": "三足攀爬机器人状态估计",
@@ -91,7 +92,10 @@
     "multirobot_method2": "✓ 全局路径规划采用 Dijkstra，局部路径规划采用 DWA",
     "multirobot_method3": "✓ 利用 AMCL 与激光雷达进行实时定位",
     "multirobot_method4": "✓ 基于 ROS 命名空间与 tf 树分离实现多机器人协调",
+    "multirobot_downloadPDF": "📄 查看报告",
+    "multirobot_githubLink": "💻 查看 GitHub",
     "multirobot_back": "← 返回作品集",
+
 
     "portfolio5__title": "基于 EKF 的土壤湿度估计系统",
     "portfolio5__description": "本系统为 MPT AgTech 播种平台定制开发，由多国工程师协作完成，基于 EKF 实现高稳定性的实时土壤湿度估计。",
