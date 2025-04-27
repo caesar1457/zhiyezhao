@@ -182,6 +182,37 @@
     "dqn_view_code": "💻 View Code on GitHub",
     "dqn_back_to_portfolio": "← Return to Portfolio",
 
+    "portfolio7__title": "Single-Leg Jump Control for the G1 Humanoid Robot",
+    "portfolio7__description": "This project implements single-leg jumping for the G1 humanoid robot in Isaac Gym. Using reinforcement learning (PPO) with a customized reward structure, the robot learns dynamic jumping motions while maintaining balance and landing stability. The project showcases skills in simulation control, motion optimization, and RL training.",
+    "g1jump_title": "Single-Leg Jump Control for the G1 Humanoid Robot | Caesar Zhao",
+    "g1jump_overview_title": "Project Overview",
+    "g1jump_overview_desc": "This project implements single-leg jumping for the G1 humanoid robot using reinforcement learning (PPO) in Isaac Gym. The robot learns dynamic and stable jumping motions through customized reward structures and policy optimization. The results demonstrate effective learning and stable motion control in simulation.",
+    
+    "g1jump_demo_title": "Demonstration",
+    "g1jump_demo_desc": "The following videos show the single-leg jumping motion and group performance of G1 humanoid robots after training.",
+    "g1jump_demo_group": "Group demonstration after 25,700 steps of training.",
+    "g1jump_demo_single": "Single-leg jumping motion demonstration.",
+  
+    "g1jump_data_title": "Training Results",
+    "g1jump_data_desc": "The following figures present the training dynamics and learning results for the single-leg jumping task.",
+    "g1jump_data_episode_length": "Average episode length during training, showing motion stabilization.",
+    "g1jump_data_entropy": "Entropy loss decreasing, indicating policy convergence.",
+    "g1jump_data_lower_body": "Lower body control error reducing and stabilizing over time.",
+    "g1jump_data_reward": "Mean reward showing steady improvement during training.",
+    "g1jump_data_upper_body": "Upper body control error stabilizing through training.",
+    "g1jump_data_3point": "3-point support error stabilizing, indicating good jumping balance.",
+  
+    "g1jump_methods_title": "Methods",
+    "g1jump_method_1": "✓ Proximal Policy Optimization (PPO) with customized reward shaping for jumping behavior.",
+    "g1jump_method_2": "✓ Simulation conducted in Isaac Gym with physics-based dynamics.",
+    "g1jump_method_3": "✓ Action-space design focused on torque control and jump height optimization.",
+    "g1jump_method_4": "✓ Curriculum learning strategy: starting from small hops and scaling up jump difficulty.",
+    "g1jump_method_5": "✓ Evaluation based on motion stability, jumping height, and landing control.",
+  
+    "g1jump_view_report": "📄 View Report",
+    "g1jump_view_code": "💻 View on GitHub",
+    "g1jump_back_to_portfolio": "← Return to Portfolio",
+
     "contact__title":"Contact me",
     "contact__subtitle":"Get in touch",
     "tel":"Tel",

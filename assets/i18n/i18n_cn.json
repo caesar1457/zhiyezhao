@@ -184,6 +184,36 @@
     "pointcloud_view_code": "💻 查看 GitHub 源码",
     "pointcloud_back": "← 返回作品集",
   
+    "portfolio7__title": "G1人形机器人单腿跳跃控制",
+    "portfolio7__description": "本项目在Isaac Gym中实现了G1人形机器人单腿跳跃。通过使用定制奖励结构的强化学习（PPO），机器人学会了动态跳跃动作，同时保持平衡与着陆稳定性。项目展示了仿真控制、动作优化和强化学习训练等技能。",
+    "g1jump_title": "G1人形机器人单腿跳跃控制 | 赵志业",
+    "g1jump_overview_title": "项目概述",
+    "g1jump_overview_desc": "本项目在Isaac Gym中，使用强化学习（PPO）实现了G1人形机器人单腿跳跃控制。通过定制奖励结构和策略优化，机器人学习到动态且稳定的跳跃动作。结果表明，机器人在仿真环境中实现了有效学习与稳定运动控制。",
+  
+    "g1jump_demo_title": "演示展示",
+    "g1jump_demo_desc": "以下视频展示了训练后G1人形机器人单腿跳跃及群体表演效果。",
+    "g1jump_demo_group": "25700步训练后，四台G1机器人同步跳跃展示。",
+    "g1jump_demo_single": "单台G1机器人单腿跳跃动作展示。",
+  
+    "g1jump_data_title": "训练结果",
+    "g1jump_data_desc": "以下图表展示了单腿跳跃任务的训练动态与学习成果。",
+    "g1jump_data_episode_length": "训练过程中每回合平均步数变化，反映动作稳定性提升。",
+    "g1jump_data_entropy": "策略熵下降，表明策略逐步收敛。",
+    "g1jump_data_lower_body": "下肢控制误差逐步降低并趋于稳定。",
+    "g1jump_data_reward": "平均奖励曲线，显示训练期间策略性能持续提升。",
+    "g1jump_data_upper_body": "上肢控制误差在训练中趋于稳定。",
+    "g1jump_data_3point": "三点支撑误差逐步稳定，体现跳跃平衡性。",
+  
+    "g1jump_methods_title": "方法介绍",
+    "g1jump_method_1": "✓ 基于定制奖励函数的PPO强化学习，实现跳跃动作学习。",
+    "g1jump_method_2": "✓ 在具备真实物理引擎的Isaac Gym中进行仿真训练。",
+    "g1jump_method_3": "✓ 动作空间设计聚焦于力矩控制与跳跃高度优化。",
+    "g1jump_method_4": "✓ 应用课程学习策略，从小幅跳跃逐步提升难度。",
+    "g1jump_method_5": "✓ 评估标准包括动作稳定性、跳跃高度与着陆控制。",
+  
+    "g1jump_view_report": "📄 查看报告",
+    "g1jump_view_code": "💻 查看GitHub代码",
+    "g1jump_back_to_portfolio": "← 返回作品集",
 
     "contact__title": "联系方式",
     "contact__subtitle": "欢迎联系我",
