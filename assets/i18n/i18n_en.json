@@ -200,7 +200,7 @@
     "g1jump_data_lower_body": "Lower body control error reducing and stabilizing over time.",
     "g1jump_data_reward": "Mean reward showing steady improvement during training.",
     "g1jump_data_upper_body": "Upper body control error stabilizing through training.",
-    "g1jump_data_3point": "3-point support error stabilizing, indicating good jumping balance.",
+    "g1jump_data_3point": "Norm of 3-point keypoints error during jumping, indicating improvement in motion precision.",
   
     "g1jump_methods_title": "Methods",
     "g1jump_method_1": "✓ Proximal Policy Optimization (PPO) with customized reward shaping for jumping behavior.",

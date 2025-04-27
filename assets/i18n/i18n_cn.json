@@ -202,7 +202,7 @@
     "g1jump_data_lower_body": "下肢控制误差逐步降低并趋于稳定。",
     "g1jump_data_reward": "平均奖励曲线，显示训练期间策略性能持续提升。",
     "g1jump_data_upper_body": "上肢控制误差在训练中趋于稳定。",
-    "g1jump_data_3point": "三点支撑误差逐步稳定，体现跳跃平衡性。",
+    "g1jump_data_3point": "跳跃过程中三个关键点位置误差逐渐收敛，反映动作精准度提升。",
   
     "g1jump_methods_title": "方法介绍",
     "g1jump_method_1": "✓ 基于定制奖励函数的PPO强化学习，实现跳跃动作学习。",
