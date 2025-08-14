@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title i18n="asap_title">ASAP/PBHC Whole-Body Control | Caesar Zhao</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="main">
+      <section class="subpage-section">
+        <h1 class="subpage-title" i18n="asap_title">ASAP/PBHC Whole-Body Control</h1>
+        <div class="subpage-meta">
+          <span class="meta-badge">Humanoid</span>
+          <span class="meta-badge">Whole-Body Control</span>
+          <span class="meta-badge">Operational Space</span>
+        </div>
+        <h2 class="subpage-subtitle" i18n="asap_overview_title">Project Overview</h2>
+        <p class="subpage-desc" i18n="asap_overview_desc">
+          This project integrates ASAP (Acceleration-level Specified-Acceleration Policies) with PBHC (Projected Hierarchical Control) to achieve robust whole-body motion on humanoids across manipulation and locomotion tasks. The stack focuses on operational-space control, task prioritization, and contact-consistent dynamics.
+        </p>
+      </section>
+
+      <section class="subpage-section">
+        <div class="two-col">
+          <div class="col-left-offset">
+            <h2 class="subpage-subtitle" i18n="asap_demo_title">Demonstration</h2>
+            <!-- <p class="subpage-desc" i18n="asap_demo_desc">Short clips showing whole-body control tracking during kicking behaviors.</p> -->
+            <ul class="subpage-list methods-list centered">
+              <li i18n="asap_result1">✓ Stable task tracking with smooth transitions across stance and swing phases</li>
+              <li i18n="asap_result2">✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes</li>
+              <li i18n="asap_result3">✓ Reproducible behaviors across sessions and scenarios (see demo clips)</li>
+            </ul>
+            <h2 class="subpage-subtitle" i18n="asap_results_title">Results</h2>
+            <ul class="subpage-list methods-list centered">
+              <li i18n="asap_result1">✓ Stable task tracking with smooth transitions across stance and swing phases</li>
+              <li i18n="asap_result2">✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes</li>
+              <li i18n="asap_result3">✓ Reproducible behaviors across sessions and scenarios (see demo clips)</li>
+            </ul>
+
+          </div>
+          <div>
+            <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+              <div class="gallery-item">
+                <video controls preload="metadata" class="subpage-video">
+                  <source src="../assets/video/连续前踢.mp4" type="video/mp4" />
+                </video>
+                <p i18n="asap_kick_combo_caption">Continuous Front Kicks</p>
+              </div>
+              <div class="gallery-item">
+                <video controls preload="metadata" class="subpage-video">
+                  <source src="../assets/video/侧踢.mp4" type="video/mp4" />
+                </video>
+                <p i18n="asap_side_kick_caption">Side Kick</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Techniques placed directly under Demonstration -->
+
+      </section>
+
+      <section class="subpage-section">
+
+        <h2 class="subpage-subtitle" style="margin-top:1.5rem;" i18n="asap_methods_title">Core Techniques</h2>
+        <ul class="subpage-list methods-list centered">
+          <li i18n="asap_method1">✓ Operational-space control with task-space tracking and null-space posture regulation</li>
+          <li i18n="asap_method2">✓ Hierarchical task prioritization with contact-consistent dynamics</li>
+          <li i18n="asap_method3">✓ Smooth task transitions across manipulation and locomotion behaviors</li>
+        </ul>
+        <div class="cta-bar">
+          <a href="../index.html#portfolio" class="button button--flex" i18n="asap_back">&larr; Return to Portfolio</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery2.1.4.min.js"></script>
+    <script src="../assets/js/jquery.i18n.min.js"></script>
+    <script src="../assets/js/cn-en-translate-module.js"></script>
+    <script src="../assets/js/iconfont.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      function initMobileMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        const navToggle = document.getElementById("nav-toggle");
+        const navClose = document.getElementById("nav-close");
+        if (navToggle) navToggle.addEventListener("click", () => navMenu.classList.add("show-menu"));
+        if (navClose) navClose.addEventListener("click", () => navMenu.classList.remove("show-menu"));
+      }
+
+      fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header-placeholder").innerHTML = data;
+          initMobileMenu();
+          initI18n();
+
+          const themeButton = document.getElementById("theme-button");
+          const darkTheme = "dark-theme", iconTheme = "uil-sun";
+          const selectedTheme = localStorage.getItem("selected-theme");
+          const selectedIcon = localStorage.getItem("selected-icon");
+
+          if (selectedTheme) {
+            document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+            themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+          }
+
+          themeButton.addEventListener("click", () => {
+            document.body.classList.toggle(darkTheme);
+            themeButton.classList.toggle(iconTheme);
+            localStorage.setItem("selected-theme", document.body.classList.contains(darkTheme) ? "dark" : "light");
+            localStorage.setItem("selected-icon", themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun");
+          });
+        });
+
+      fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+  </html>
+
+

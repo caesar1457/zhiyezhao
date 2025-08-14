@@ -740,29 +740,78 @@
 
         <div class="portfolio__container container swiper-container">
           <div class="swiper-wrapper">
-            <!--==================== PORTFOLIO 0 ====================-->
+            <!--==================== PORTFOLIO 0 (ASAP/PBHC) ====================-->
             <div class="portfolio__content grid swiper-slide">
               <img
-                src="assets/img/G1-singleLegJump.png"
-                alt="Single-Leg Jump of G1 Humanoid Robot"
+                src="assets/img/连续前踢.png"
+                alt="ASAP/PBHC Whole-Body Control"
                 class="portfolio__img portfolio__img-small"
               />
             
               <div class="portfolio_">
-                <h3 class="portfolio__title" i18n="portfolio7__title">
-                  Single-Leg Jump Control for the G1 Humanoid Robot
+                <h3 class="portfolio__title" i18n="portfolio_asap__title">
+                  ASAP/PBHC Whole-Body Control
                 </h3>
                 <p
                   class="portfolio__description"
-                  i18n="portfolio7__description"
+                  i18n="portfolio_asap__description"
                 >
-                  This project implements single-leg jumping for the G1 humanoid robot in Isaac Gym. 
-                  Using reinforcement learning (PPO) with a customized reward structure, the robot 
-                  learns dynamic jumping motions while maintaining balance and landing stability. 
-                  The project showcases skills in simulation control, motion optimization, and RL training.
+                  A whole-body control stack integrating ASAP and PBHC for robust humanoid motion across manipulation and locomotion tasks.
                 </p>
                 <a
-                  href="./projects/G1-singleLegJumps.html"
+                  href="./projects/asap-pbhc.html"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO (HoST) ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/HoST_ground.png"
+                alt="HoST Framework"
+                class="portfolio__img"
+              />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio_host__title">
+                  HoST
+                </h3>
+                <p class="portfolio__description" i18n="portfolio_host__description">
+                  A high-performance operational-space tracking/control framework for whole-body behaviors.
+                </p>
+                <a
+                  href="./projects/host.html"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Demo
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO (Tron1A) ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/Tron1A.png"
+                alt="Tron1A Point-Foot Biped Locomotion"
+                class="portfolio__img portfolio__img-small"
+              />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio_tron1a__title">
+                  Tron1A Point-Foot Biped Locomotion
+                </h3>
+                <p class="portfolio__description" i18n="portfolio_tron1a__description">
+                  Locomotion control and estimation for a point-foot biped platform, focusing on stability and agile gait transitions.
+                </p>
+                <a
+                  href="./projects/tron1a-biped-locomotion.html"
                   target="_blank"
                   class="button button--flex button--small portfolio__button"
                 >
@@ -1016,6 +1065,7 @@
                   >HangZhou , CHN</span
                 >
               </div>
+              
             </div>
           </div>
         </div>

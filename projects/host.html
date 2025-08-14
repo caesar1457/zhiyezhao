@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title i18n="host_title">HoST Framework | Caesar Zhao</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <main class="main">
+      <section class="subpage-section">
+        <h1 class="subpage-title" i18n="host_title">HoST Framework</h1>
+        <div class="subpage-meta">
+          <span class="meta-badge">Operational Space</span>
+          <span class="meta-badge">Multi-Contact</span>
+          <span class="meta-badge">Realtime</span>
+        </div>
+        <h2 class="subpage-subtitle" i18n="host_overview_title">Project Overview</h2>
+        <p class="subpage-desc" i18n="host_overview_desc">
+          HoST is a high-performance operational-space tracking framework enabling stable, responsive, and coordinated whole-body behaviors under multi-contact scenarios.
+        </p>
+      </section>
+
+      <section class="subpage-section">
+        <div class="two-col">
+          <div class="col-left-offset">
+            <h2 class="subpage-subtitle" i18n="host_demo_title">Demonstration</h2>
+            <!-- <p class="subpage-desc" i18n="host_demo_desc">Ground-contact tracking test with operational-space control.</p> -->
+            <ul class="subpage-list methods-list centered">
+              <li i18n="host_result1">✓ Accurate operational-space tracking with smooth joint motions</li>
+              <li i18n="host_result2">✓ Stable behavior across varying contact conditions on the ground</li>
+              <li i18n="host_result3">✓ Modular tasks that can be extended to manipulation or locomotion</li>
+            </ul>
+          </div>
+          <div>
+            <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+              <div class="gallery-item">
+                <video controls preload="metadata" class="subpage-video">
+                  <source src="../assets/video/HoST_ground.mp4" type="video/mp4" />
+                </video>
+                <p i18n="host_ground_caption">Ground get-up</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subpage-section">
+        <h2 class="subpage-subtitle" i18n="host_methods_title">Core Techniques</h2>
+        <ul class="subpage-list methods-list centered">
+          <li i18n="host_method1">✓ Operational-space tracking with robust feedback</li>
+          <li i18n="host_method2">✓ Multi-contact handling and task blending</li>
+          <li i18n="host_method3">✓ Real-time implementation with modular task definitions</li>
+        </ul>
+
+        
+
+        <h2 class="subpage-subtitle" style="margin-top:1.5rem;" i18n="host_results_title">Results</h2>
+        <ul class="subpage-list methods-list centered">
+          <li i18n="host_result1">✓ Accurate operational-space tracking with smooth joint motions</li>
+          <li i18n="host_result2">✓ Stable behavior across varying contact conditions on the ground</li>
+          <li i18n="host_result3">✓ Modular tasks that can be extended to manipulation or locomotion</li>
+        </ul>
+        <div class="cta-bar">
+          <a href="../index.html#portfolio" class="button button--flex" i18n="host_back">&larr; Return to Portfolio</a>
+        </div>
+
+        
+      </section>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery2.1.4.min.js"></script>
+    <script src="../assets/js/jquery.i18n.min.js"></script>
+    <script src="../assets/js/cn-en-translate-module.js"></script>
+    <script src="../assets/js/iconfont.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function initMobileMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        const navToggle = document.getElementById("nav-toggle");
+        const navClose = document.getElementById("nav-close");
+        if (navToggle) navToggle.addEventListener("click", () => navMenu.classList.add("show-menu"));
+        if (navClose) navClose.addEventListener("click", () => navMenu.classList.remove("show-menu"));
+      }
+      fetch("../header.html").then(r=>r.text()).then(t=>{document.getElementById("header-placeholder").innerHTML=t;initMobileMenu();initI18n();const e=document.getElementById("theme-button"),n="dark-theme",o="uil-sun",s=localStorage.getItem("selected-theme"),a=localStorage.getItem("selected-icon");s&&(document.body.classList["dark"===s?"add":"remove"](n),e.classList["uil-moon"===a?"add":"remove"](o)),e.addEventListener("click",(()=>{document.body.classList.toggle(n),e.classList.toggle(o),localStorage.setItem("selected-theme",document.body.classList.contains(n)?"dark":"light"),localStorage.setItem("selected-icon",e.classList.contains(o)?"uil-moon":"uil-sun")}))});
+      fetch("../footer.html").then(r=>r.text()).then(t=>{document.getElementById("footer-placeholder").innerHTML=t});
+    </script>
+  </body>
+  </html>
+
+

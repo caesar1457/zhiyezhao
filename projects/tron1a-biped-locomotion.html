@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title i18n="tron_title">Tron1A Point-Foot Biped Locomotion | Caesar Zhao</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+    <main class="main">
+      <section class="subpage-section">
+        <h1 class="subpage-title" i18n="tron_title">Tron1A Point-Foot Biped Locomotion</h1>
+        <div class="subpage-meta">
+          <span class="meta-badge">Biped</span>
+          <span class="meta-badge">Point-Foot</span>
+          <span class="meta-badge">Locomotion</span>
+        </div>
+        <h2 class="subpage-subtitle" i18n="tron_overview_title">Project Overview</h2>
+        <p class="subpage-desc" i18n="tron_overview_desc">
+          This project develops locomotion for a point-foot biped platform (Tron1A), focusing on state estimation, gait generation, and stability under disturbances.
+        </p>
+      </section>
+
+      <section class="subpage-section">
+        <div class="two-col">
+          <div class="col-left-offset">
+            <h2 class="subpage-subtitle" i18n="tron_demo_title">Demonstration</h2>
+            <!-- <p class="subpage-desc" i18n="tron_demo_desc">Traversals across varied terrains highlighting balance and adaptability.</p> -->
+            <ul class="subpage-list methods-list centered">
+              <li i18n="tron_result1">✓ Consistent traversals over mixed terrains with balanced CoM motion</li>
+              <li i18n="tron_result2">✓ Reliable transitions between gait phases without foot scuffing</li>
+              <li i18n="tron_result3">✓ Video evidence shows robustness to moderate disturbances</li>
+            </ul>
+            <h2 class="subpage-subtitle" i18n="tron_results_title">Results</h2>
+            <ul class="subpage-list methods-list centered">
+              <li i18n="tron_result1">✓ Consistent traversals over mixed terrains with balanced CoM motion</li>
+              <li i18n="tron_result2">✓ Reliable transitions between gait phases without foot scuffing</li>
+              <li i18n="tron_result3">✓ Video evidence shows robustness to moderate disturbances</li>
+            </ul>
+
+          </div>
+
+          <div>
+            <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 1rem;">
+              <div class="gallery-item">
+                <video controls preload="metadata" class="subpage-video">
+                  <source src="../assets/video/所有地形1.mp4" type="video/mp4" />
+                </video>
+                <p i18n="tron_allterrain1_caption">All Terrains 1</p>
+              </div>
+              <div class="gallery-item">
+                <video controls preload="metadata" class="subpage-video">
+                  <source src="../assets/video/所有地形2.mp4" type="video/mp4" />
+                </video>
+                <p i18n="tron_allterrain2_caption">All Terrains 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subpage-section">
+
+
+
+        <h2 class="subpage-subtitle" i18n="tron_methods_title">Core Techniques</h2>
+        <ul class="subpage-list methods-list centered">
+          <li i18n="tron_method1">✓ State estimation with IMU and kinematics for floating-base pose</li>
+          <li i18n="tron_method2">✓ Gait generation with ZMP/CoM planning and phase scheduling</li>
+          <li i18n="tron_method3">✓ Whole-body control for stance and swing with contact constraints</li>
+        </ul>
+        <div class="cta-bar">
+          <a href="../index.html#portfolio" class="button button--flex" i18n="tron_back">&larr; Return to Portfolio</a>
+        </div>
+
+        
+      </section>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery2.1.4.min.js"></script>
+    <script src="../assets/js/jquery.i18n.min.js"></script>
+    <script src="../assets/js/cn-en-translate-module.js"></script>
+    <script src="../assets/js/iconfont.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function initMobileMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        const navToggle = document.getElementById("nav-toggle");
+        const navClose = document.getElementById("nav-close");
+        if (navToggle) navToggle.addEventListener("click", () => navMenu.classList.add("show-menu"));
+        if (navClose) navClose.addEventListener("click", () => navMenu.classList.remove("show-menu"));
+      }
+
+      fetch("../header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header-placeholder").innerHTML = data;
+          initMobileMenu();
+          initI18n();
+
+          const themeButton = document.getElementById("theme-button");
+          const darkTheme = "dark-theme", iconTheme = "uil-sun";
+          const selectedTheme = localStorage.getItem("selected-theme");
+          const selectedIcon = localStorage.getItem("selected-icon");
+
+          if (selectedTheme) {
+            document.body.classList[selectedTheme === "dark" ? "add" : "remove"](darkTheme);
+            themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](iconTheme);
+          }
+
+          themeButton.addEventListener("click", () => {
+            document.body.classList.toggle(darkTheme);
+            themeButton.classList.toggle(iconTheme);
+            localStorage.setItem("selected-theme", document.body.classList.contains(darkTheme) ? "dark" : "light");
+            localStorage.setItem("selected-icon", themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun");
+          });
+        });
+
+      fetch("../footer.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+  </html>
+
+
