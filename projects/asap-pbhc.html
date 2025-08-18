@@ -24,49 +24,44 @@
         <p class="subpage-desc" i18n="asap_overview_desc">
           This project integrates ASAP (Acceleration-level Specified-Acceleration Policies) with PBHC (Projected Hierarchical Control) to achieve robust whole-body motion on humanoids across manipulation and locomotion tasks. The stack focuses on operational-space control, task prioritization, and contact-consistent dynamics.
         </p>
-      </section>
-
-      <section class="subpage-section">
-        <div class="two-col">
-          <div class="col-left-offset">
-            <h2 class="subpage-subtitle" i18n="asap_demo_title">Demonstration</h2>
-            <!-- <p class="subpage-desc" i18n="asap_demo_desc">Short clips showing whole-body control tracking during kicking behaviors.</p> -->
-            <ul class="subpage-list methods-list centered">
-              <li i18n="asap_result1">✓ Stable task tracking with smooth transitions across stance and swing phases</li>
-              <li i18n="asap_result2">✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes</li>
-              <li i18n="asap_result3">✓ Reproducible behaviors across sessions and scenarios (see demo clips)</li>
-            </ul>
-            <h2 class="subpage-subtitle" i18n="asap_results_title">Results</h2>
-            <ul class="subpage-list methods-list centered">
-              <li i18n="asap_result1">✓ Stable task tracking with smooth transitions across stance and swing phases</li>
-              <li i18n="asap_result2">✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes</li>
-              <li i18n="asap_result3">✓ Reproducible behaviors across sessions and scenarios (see demo clips)</li>
-            </ul>
-
+        <hr class="subpage-divider" />
+        <h2 class="subpage-subtitle" i18n="asap_demo_title">Demonstration</h2>
+        <!-- <p class="subpage-desc" i18n="asap_demo_desc">Short clips showing whole-body control tracking during kicking behaviors.</p> -->
+        <ul class="subpage-list methods-list centered">
+          <li i18n="asap_result1">✓ Stable task tracking with smooth transitions across stance and swing phases</li>
+          <li i18n="asap_result2">✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes</li>
+          <li i18n="asap_result3">✓ Reproducible behaviors across sessions and scenarios (see demo clips)</li>
+        </ul>
+        <div class="gallery-grid asap-gallery">
+          <!-- Row 1: Front kick + Side kick -->
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/连续前踢.mp4" type="video/mp4" />
+            </video>
+            <p i18n="asap_kick_combo_caption">Continuous Front Kicks</p>
           </div>
-          <div>
-            <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 1rem;">
-              <div class="gallery-item">
-                <video controls preload="metadata" class="subpage-video">
-                  <source src="../assets/video/连续前踢.mp4" type="video/mp4" />
-                </video>
-                <p i18n="asap_kick_combo_caption">Continuous Front Kicks</p>
-              </div>
-              <div class="gallery-item">
-                <video controls preload="metadata" class="subpage-video">
-                  <source src="../assets/video/侧踢.mp4" type="video/mp4" />
-                </video>
-                <p i18n="asap_side_kick_caption">Side Kick</p>
-              </div>
-            </div>
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/侧踢.mp4" type="video/mp4" />
+            </video>
+            <p i18n="asap_side_kick_caption">Side Kick</p>
+          </div>
+          <!-- Row 2: Sword dance + Boxing -->
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/大剑.mp4" type="video/mp4" />
+            </video>
+            <p i18n="asap_sword_caption">Broadsword Form</p>
+          </div>
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/拳击.mp4" type="video/mp4" />
+            </video>
+            <p i18n="asap_boxing_caption">Boxing</p>
           </div>
         </div>
-
         <!-- Core Techniques placed directly under Demonstration -->
-
-      </section>
-
-      <section class="subpage-section">
+        <hr class="subpage-divider" />
 
         <h2 class="subpage-subtitle" style="margin-top:1.5rem;" i18n="asap_methods_title">Core Techniques</h2>
         <ul class="subpage-list methods-list centered">

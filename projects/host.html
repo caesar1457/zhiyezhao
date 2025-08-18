@@ -22,33 +22,38 @@
         <p class="subpage-desc" i18n="host_overview_desc">
           HoST is a high-performance operational-space tracking framework enabling stable, responsive, and coordinated whole-body behaviors under multi-contact scenarios.
         </p>
-      </section>
-
-      <section class="subpage-section">
-        <div class="two-col">
-          <div class="col-left-offset">
-            <h2 class="subpage-subtitle" i18n="host_demo_title">Demonstration</h2>
-            <!-- <p class="subpage-desc" i18n="host_demo_desc">Ground-contact tracking test with operational-space control.</p> -->
-            <ul class="subpage-list methods-list centered">
-              <li i18n="host_result1">✓ Accurate operational-space tracking with smooth joint motions</li>
-              <li i18n="host_result2">✓ Stable behavior across varying contact conditions on the ground</li>
-              <li i18n="host_result3">✓ Modular tasks that can be extended to manipulation or locomotion</li>
-            </ul>
+        <hr class="subpage-divider" />
+        
+        <h2 class="subpage-subtitle" i18n="host_demo_title">Demonstration</h2>
+        <!-- <p class="subpage-desc" i18n="host_demo_desc">Ground-contact tracking test with operational-space control.</p> -->
+        <ul class="subpage-list methods-list centered">
+          <li i18n="host_result1">✓ Accurate operational-space tracking with smooth joint motions</li>
+          <li i18n="host_result2">✓ Stable behavior across varying contact conditions on the ground</li>
+          <li i18n="host_result3">✓ Modular tasks that can be extended to manipulation or locomotion</li>
+        </ul>
+        <div class="gallery-grid host-gallery">
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/HoST_ground.mp4" type="video/mp4" />
+            </video>
+            <p i18n="host_ground_caption">Ground get-up</p>
           </div>
-          <div>
-            <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 1rem;">
-              <div class="gallery-item">
-                <video controls preload="metadata" class="subpage-video">
-                  <source src="../assets/video/HoST_ground.mp4" type="video/mp4" />
-                </video>
-                <p i18n="host_ground_caption">Ground get-up</p>
-              </div>
-            </div>
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/HoST_chair.mp4" type="video/mp4" />
+            </video>
+            <p i18n="host_chair_caption">Chair get-up</p>
+          </div>
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/HoST_platform.mp4" type="video/mp4" />
+            </video>
+            <p i18n="host_platform_caption">Platform stabilization</p>
+            
           </div>
         </div>
-      </section>
-
-      <section class="subpage-section">
+        <hr class="subpage-divider" />
+        
         <h2 class="subpage-subtitle" i18n="host_methods_title">Core Techniques</h2>
         <ul class="subpage-list methods-list centered">
           <li i18n="host_method1">✓ Operational-space tracking with robust feedback</li>
@@ -67,8 +72,6 @@
         <div class="cta-bar">
           <a href="../index.html#portfolio" class="button button--flex" i18n="host_back">&larr; Return to Portfolio</a>
         </div>
-
-        
       </section>
     </main>
     <div id="footer-placeholder"></div>

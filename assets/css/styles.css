@@ -1250,6 +1250,30 @@ img {
   margin: 0 auto 2rem auto;
 }
 
+/* Subtle, elegant divider for subpage sections */
+.subpage-divider {
+  position: relative;
+  height: 2px;
+  border: 0;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.18), transparent);
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.subpage-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--first-color);
+  opacity: 0.7;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04);
+}
+
 .subpage-img,
 .subpage-video {
   width: 100%;
@@ -1374,6 +1398,29 @@ img {
   margin-top: 1rem;
 }
 
+/* HoST page specific video grid: 3/2/1 responsive columns */
+.host-gallery {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+}
+
+/* Override: use natural aspect ratio for HoST videos */
+.host-gallery .gallery-item .subpage-video {
+  aspect-ratio: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .host-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .host-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Two-column text layout for highlights */
 .two-col {
   display: grid;
@@ -1418,6 +1465,29 @@ img {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
 }
 
+/* ASAP page specific video grid: 3/2/1 responsive columns */
+.asap-gallery {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+}
+
+@media screen and (max-width: 1024px) {
+  .asap-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .asap-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Override natural video sizing for ASAP gallery */
+.asap-gallery .gallery-item .subpage-video {
+  aspect-ratio: auto;
+}
+
 .gallery-item p {
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -1429,6 +1499,15 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Uniformize video tiles across galleries */
+.gallery-item .subpage-video {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: contain;
 }
 
 
