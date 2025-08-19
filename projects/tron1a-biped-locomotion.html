@@ -24,50 +24,39 @@
         </p>
         <hr class="subpage-divider" />
         <div class="two-col">
-          <div class="col-left-offset">
-            <h2 class="subpage-subtitle" i18n="tron_demo_title">Demonstration</h2>
-            <!-- <p class="subpage-desc" i18n="tron_demo_desc">Traversals across varied terrains highlighting balance and adaptability.</p> -->
-            <ul class="subpage-list methods-list centered">
-              <li i18n="tron_result1">✓ Consistent traversals over mixed terrains with balanced CoM motion</li>
-              <li i18n="tron_result2">✓ Reliable transitions between gait phases without foot scuffing</li>
-              <li i18n="tron_result3">✓ Video evidence shows robustness to moderate disturbances</li>
+          <div style="text-align:left;">
+            <h2 class="subpage-subtitle">核心技术</h2>
+            <ul class="subpage-list methods-list">
+              <li>✓ 强化学习策略训练：采用基于物理的强化学习方法，在仿真环境中训练机器人学会行走步态，重点解决了点足接触下的平衡与推进问题。</li>
+              <li>✓ 奖励函数设计：通过合理设置奖励项（如步态稳定性、能量效率、身体姿态控制），保证机器人不仅能走直路，还能应对地形起伏。</li>
+              <li>✓ 复杂地形测试：实验中，机器人能够在台阶、斜坡、非平整表面等地形上保持稳定行走，验证了策略的泛化能力。</li>
             </ul>
-            <h2 class="subpage-subtitle" i18n="tron_results_title">Results</h2>
-            <ul class="subpage-list methods-list centered">
-              <li i18n="tron_result1">✓ Consistent traversals over mixed terrains with balanced CoM motion</li>
-              <li i18n="tron_result2">✓ Reliable transitions between gait phases without foot scuffing</li>
-              <li i18n="tron_result3">✓ Video evidence shows robustness to moderate disturbances</li>
-            </ul>
-
           </div>
-
-          <div>
-            <div class="gallery-grid" style="grid-template-columns: 1fr; gap: 1rem;">
-              <div class="gallery-item">
-                <video controls preload="metadata" class="subpage-video">
-                  <source src="../assets/video/所有地形1.mp4" type="video/mp4" />
-                </video>
-                <p i18n="tron_allterrain1_caption">All Terrains 1</p>
-              </div>
-              <div class="gallery-item">
-                <video controls preload="metadata" class="subpage-video">
-                  <source src="../assets/video/所有地形2.mp4" type="video/mp4" />
-                </video>
-                <p i18n="tron_allterrain2_caption">All Terrains 2</p>
-              </div>
-            </div>
+          <div style="text-align:left;">
+            <h2 class="subpage-subtitle">训练策略</h2>
+            <ul class="subpage-list methods-list">
+              <li>✓ 课程学习：先在平坦地形上训练基本步态，然后逐步增加地形复杂度（如斜坡、台阶、不规则地形），让机器人逐层掌握稳定性与适应性。</li>
+              <li>✓ 域随机化：在训练过程中引入不同的摩擦系数、地形高度差和外部扰动，以提升策略的鲁棒性和泛化能力。</li>
+              <li>✓ 多步预测与延迟奖励：结合短期步态奖励和长期稳定性奖励，引导机器人在保持动态平衡的同时优化能量效率。</li>
+            </ul>
           </div>
         </div>
-        <hr class="subpage-divider" />
 
+        <div class="gallery-grid tron-gallery" style="gap: 1rem;">
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/所有地形1.mp4" type="video/mp4" />
+            </video>
+            <p i18n="tron_allterrain1_caption">All Terrains 1</p>
+          </div>
+          <div class="gallery-item">
+            <video controls preload="metadata" class="subpage-video">
+              <source src="../assets/video/所有地形2.mp4" type="video/mp4" />
+            </video>
+            <p i18n="tron_allterrain2_caption">All Terrains 2</p>
+          </div>
+        </div>
 
-
-        <h2 class="subpage-subtitle" i18n="tron_methods_title">Core Techniques</h2>
-        <ul class="subpage-list methods-list centered">
-          <li i18n="tron_method1">✓ State estimation with IMU and kinematics for floating-base pose</li>
-          <li i18n="tron_method2">✓ Gait generation with ZMP/CoM planning and phase scheduling</li>
-          <li i18n="tron_method3">✓ Whole-body control for stance and swing with contact constraints</li>
-        </ul>
         <div class="cta-bar">
           <a href="../index.html#portfolio" class="button button--flex" i18n="tron_back">&larr; Return to Portfolio</a>
         </div>

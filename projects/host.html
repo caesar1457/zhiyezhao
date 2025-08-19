@@ -24,13 +24,24 @@
         </p>
         <hr class="subpage-divider" />
         
-        <h2 class="subpage-subtitle" i18n="host_demo_title">Demonstration</h2>
-        <!-- <p class="subpage-desc" i18n="host_demo_desc">Ground-contact tracking test with operational-space control.</p> -->
-        <ul class="subpage-list methods-list centered">
-          <li i18n="host_result1">✓ Accurate operational-space tracking with smooth joint motions</li>
-          <li i18n="host_result2">✓ Stable behavior across varying contact conditions on the ground</li>
-          <li i18n="host_result3">✓ Modular tasks that can be extended to manipulation or locomotion</li>
-        </ul>
+        <div class="two-col">
+          <div>
+            <h2 class="subpage-subtitle">核心技术：</h2>
+            <ul class="subpage-list methods-list">
+              <li>✓ 多评论家强化学习：通过对奖励进行分组，降低复杂奖励函数带来的训练难度。</li>
+              <li>✓ 课程学习：先在上拉力辅助下探索，再逐步减弱辅助，实现平滑过渡。</li>
+              <li>✓ 动作约束：结合动作缩放器（rescaler）与平滑正则化，提升动作的稳定性与可控性。</li>
+              <li>✓ 域随机化：在多种地形与参数扰动下训练，增强策略的泛化能力。</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="subpage-subtitle">训练策略：</h2>
+            <ul class="subpage-list methods-list">
+              <li>✓ 三阶段奖励机制：分为翻身、直立、保持站立三个阶段，逐层引导策略学习。</li>
+              <li>✓ 多环境并行训练：在地面、平台、斜坡和障碍等多样环境中同时训练，提高鲁棒性。</li>
+            </ul>
+          </div>
+        </div>
         <div class="gallery-grid host-gallery">
           <div class="gallery-item">
             <video controls preload="metadata" class="subpage-video">
@@ -52,23 +63,6 @@
             
           </div>
         </div>
-        <hr class="subpage-divider" />
-        
-        <h2 class="subpage-subtitle" i18n="host_methods_title">Core Techniques</h2>
-        <ul class="subpage-list methods-list centered">
-          <li i18n="host_method1">✓ Operational-space tracking with robust feedback</li>
-          <li i18n="host_method2">✓ Multi-contact handling and task blending</li>
-          <li i18n="host_method3">✓ Real-time implementation with modular task definitions</li>
-        </ul>
-
-        
-
-        <h2 class="subpage-subtitle" style="margin-top:1.5rem;" i18n="host_results_title">Results</h2>
-        <ul class="subpage-list methods-list centered">
-          <li i18n="host_result1">✓ Accurate operational-space tracking with smooth joint motions</li>
-          <li i18n="host_result2">✓ Stable behavior across varying contact conditions on the ground</li>
-          <li i18n="host_result3">✓ Modular tasks that can be extended to manipulation or locomotion</li>
-        </ul>
         <div class="cta-bar">
           <a href="../index.html#portfolio" class="button button--flex" i18n="host_back">&larr; Return to Portfolio</a>
         </div>

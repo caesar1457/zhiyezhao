@@ -1501,6 +1501,18 @@ img {
   align-items: center;
 }
 
+/* Larger captions for key project pages */
+.host-gallery .gallery-item p,
+.asap-gallery .gallery-item p,
+.gallery-grid + .gallery-item p {
+  font-size: 1.1rem;
+}
+
+/* Tron1A page captions */
+.tron-gallery .gallery-item p {
+  font-size: 1.1rem;
+}
+
 /* Uniformize video tiles across galleries */
 .gallery-item .subpage-video {
   width: 100%;

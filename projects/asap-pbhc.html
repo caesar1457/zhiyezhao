@@ -25,13 +25,38 @@
           This project integrates ASAP (Acceleration-level Specified-Acceleration Policies) with PBHC (Projected Hierarchical Control) to achieve robust whole-body motion on humanoids across manipulation and locomotion tasks. The stack focuses on operational-space control, task prioritization, and contact-consistent dynamics.
         </p>
         <hr class="subpage-divider" />
-        <h2 class="subpage-subtitle" i18n="asap_demo_title">Demonstration</h2>
-        <!-- <p class="subpage-desc" i18n="asap_demo_desc">Short clips showing whole-body control tracking during kicking behaviors.</p> -->
-        <ul class="subpage-list methods-list centered">
-          <li i18n="asap_result1">✓ Stable task tracking with smooth transitions across stance and swing phases</li>
-          <li i18n="asap_result2">✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes</li>
-          <li i18n="asap_result3">✓ Reproducible behaviors across sessions and scenarios (see demo clips)</li>
-        </ul>
+        <div class="two-col">
+          <div style="text-align:left;">
+            <h3 class="subpage-subtitle" style="text-align:left;">ASAP</h3>
+            <h4 class="subpage-subtitle" style="font-size:1.1rem;margin-top:.5rem;text-align:left;">核心技术：</h4>
+            <ul class="subpage-list methods-list">
+              <li>✓ 两阶段框架：先在仿真环境中预训练，后用 delta action 模型对齐真实物理。</li>
+              <li>✓ 动作重定向：将 SMPL 人体模型动作映射到机器人动作空间。</li>
+              <li>✓ 非对称 Actor-Critic：训练用 privileged 信息，部署仅依赖自身感知。</li>
+            </ul>
+            <h4 class="subpage-subtitle" style="font-size:1.1rem;margin-top:1rem;text-align:left;">训练策略：</h4>
+            <ul class="subpage-list methods-list">
+              <li>✓ 参考状态初始化（RSI）：提升探索效率、加速收敛。</li>
+              <li>✓ 终止条件课程：逐步收紧跟踪容差，提升策略稳定性。</li>
+              <li>✓ 分层奖励设计：任务奖励、正则化、惩罚项结构清晰，利于优化。</li>
+            </ul>
+          </div>
+          <div style="text-align:left;">
+            <h3 class="subpage-subtitle" style="text-align:left;">PBHC</h3>
+            <h4 class="subpage-subtitle" style="font-size:1.1rem;margin-top:.5rem;text-align:left;">核心技术：</h4>
+            <ul class="subpage-list methods-list">
+              <li>✓ 多阶段动作处理管线：估计 → 过滤 → 接触掩码修正 → IK 重定向，确保稳定与物理合理性。</li>
+              <li>✓ 自适应跟踪因子：动态调整奖励容差，解决难以精确模仿的动作问题。</li>
+              <li>✓ 双层优化与在线反馈：结合 EMA 平滑，实现鲁棒训练与部署。</li>
+              <li>✓ 非对称 Actor-Critic + 奖励向量化：提升泛化能力与训练效率。</li>
+            </ul>
+            <h4 class="subpage-subtitle" style="font-size:1.1rem;margin-top:1rem;text-align:left;">训练策略：</h4>
+            <ul class="subpage-list methods-list">
+              <li>✓ 课程学习 + 域随机化：逐步增加难度，提升对扰动的鲁棒性。</li>
+              <li>✓ 参考状态初始化（RSI）：提高采样效率、加快探索与收敛。</li>
+            </ul>
+          </div>
+        </div>
         <div class="gallery-grid asap-gallery">
           <!-- Row 1: Front kick + Side kick -->
           <div class="gallery-item">
@@ -60,15 +85,7 @@
             <p i18n="asap_boxing_caption">Boxing</p>
           </div>
         </div>
-        <!-- Core Techniques placed directly under Demonstration -->
-        <hr class="subpage-divider" />
-
-        <h2 class="subpage-subtitle" style="margin-top:1.5rem;" i18n="asap_methods_title">Core Techniques</h2>
-        <ul class="subpage-list methods-list centered">
-          <li i18n="asap_method1">✓ Operational-space control with task-space tracking and null-space posture regulation</li>
-          <li i18n="asap_method2">✓ Hierarchical task prioritization with contact-consistent dynamics</li>
-          <li i18n="asap_method3">✓ Smooth task transitions across manipulation and locomotion behaviors</li>
-        </ul>
+        
         <div class="cta-bar">
           <a href="../index.html#portfolio" class="button button--flex" i18n="asap_back">&larr; Return to Portfolio</a>
         </div>
