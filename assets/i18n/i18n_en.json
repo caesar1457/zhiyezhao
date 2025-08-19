@@ -231,7 +231,7 @@
 
   "asap_title": "ASAP/PBHC Whole-Body Control",
   "asap_overview_title": "Project Overview",
-  "asap_overview_desc": "This project integrates ASAP (Acceleration-level Specified-Acceleration Policies) with PBHC (Projected Hierarchical Control) to achieve robust whole-body motion on humanoids across manipulation and locomotion tasks. The stack focuses on operational-space control, task prioritization, and contact-consistent dynamics.",
+  "asap_overview_desc": "This project builds on the ASAP (Adaptive Skill Acquisition Policy) and PBHC (Physics-Based Hierarchical Control) frameworks to achieve whole-body control of a high-DoF humanoid (Unitree G1). Using reinforcement learning and physics simulation, complex motions are decomposed into skill primitives and combined with physical constraints to enable stable, precise motion imitation, with successful deployment on real hardware.",
   "asap_methods_title": "Core Techniques",
   "asap_method1": "✓ Operational-space control with task-space tracking and null-space posture regulation",
   "asap_method2": "✓ Hierarchical task prioritization with contact-consistent dynamics",
@@ -254,9 +254,9 @@
   "asap_result2": "✓ Robustness to contact switches and rapid joint accelerations without noticeable torque spikes",
   "asap_result3": "✓ Reproducible behaviors across sessions and scenarios (see demo clips)",
 
-  "host_title": "HoST Framework",
+  "host_title": "HoST: Multi-Posture Standing Control for Humanoid Robots",
   "host_overview_title": "Project Overview",
-  "host_overview_desc": "HoST is a high-performance operational-space tracking framework enabling stable, responsive, and coordinated whole-body behaviors under multi-contact scenarios.",
+  "host_overview_desc": "This project is based on the HoST (Humanoid Standing-up Task) framework to enable autonomous standing from diverse initial postures for a humanoid robot. Leveraging reinforcement learning with physics simulation, we design a multi-layer reward structure and an action reward curriculum to train a policy that controls full-body joints for stable standing and posture transitions.",
   "host_methods_title": "Core Techniques",
   "host_method1": "✓ Operational-space tracking with robust feedback",
   "host_method2": "✓ Multi-contact handling and task blending",
@@ -278,9 +278,9 @@
   "host_result2": "✓ Stable behavior across varying contact conditions on the ground",
   "host_result3": "✓ Modular tasks that can be extended to manipulation or locomotion",
 
-  "tron_title": "Tron1A Point-Foot Biped Locomotion",
+  "tron_title": "Tron1A Point-Foot Biped Locomotion on Complex Terrain",
   "tron_overview_title": "Project Overview",
-  "tron_overview_desc": "This project develops locomotion for a point-foot biped platform (Tron1A), focusing on state estimation, gait generation, and stability under disturbances.",
+  "tron_overview_desc": "This project enables autonomous locomotion of the Tron1A point-foot biped on complex terrain (including steps and uneven ground). Using reinforcement learning with physics simulation, a policy is trained to maintain balance, control gait, and adapt to terrain variations in a high-DoF, underactuated system.",
   "tron_methods_title": "Core Techniques",
   "tron_method1": "✓ State estimation with IMU and kinematics for floating-base pose",
   "tron_method2": "✓ Gait generation with ZMP/CoM planning and phase scheduling",
