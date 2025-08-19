@@ -74,6 +74,10 @@ tabs.forEach(tab => {
 let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
   
     navigation: {
       nextEl: '.swiper-button-next',

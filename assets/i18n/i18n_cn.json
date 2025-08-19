@@ -71,11 +71,11 @@
     "portfolio__subtitle": "近期代表作品",
    
   "portfolio_asap__title": "ASAP/PBHC 全身控制",
-  "portfolio_asap__description": "集成 ASAP 与 PBHC 的全身控制栈，支持人形机器人在操作与行走任务中的鲁棒运动控制。",
-  "portfolio_host__title": "HoST",
-  "portfolio_host__description": "面向全身行为的高性能操作空间跟踪/控制框架。",
-  "portfolio_tron1a__title": "Tron1A 点足双足行走",
-  "portfolio_tron1a__description": "面向点足双足机器人的运动控制与状态估计，强调稳定性与敏捷步态切换。",
+  "portfolio_asap__description": "基于 ASAP（Adaptive Skill Acquisition Policy）与 PBHC（Physics-Based Hierarchical Control）。将复杂动作拆分为技能块并结合物理约束；RL+仿真实现稳定、精确的动作模仿，并已在实机验证。",
+  "portfolio_host__title": "HoST：多姿态站立控制",
+  "portfolio_host__description": "基于 HoST 框架的 RL+物理仿真方法，实现从多种初始姿态自主站立。通过多层奖励与 reward curriculum 训练策略，实现稳定站立与姿态切换，已完成实机部署。",
+  "portfolio_tron1a__title": "Tron1A：复杂地形点足双足行走",
+  "portfolio_tron1a__description": "在物理仿真中用 RL 训练策略，使其在高自由度、欠驱动条件下保持平衡、控制步态并适应台阶与不平地面等复杂地形。",
    
     "portfolio2__title": "基于 MPC 的编队控制",
     "portfolio2__description": "本项目在 MATLAB 中构建了基于模型预测控制（MPC）的领航-跟随型编队系统，实现了多机器人在动态环境中对领航者的跟踪、队形保持与避障。我负责核心 MPC 控制器与编队策略的开发，系统展现出良好的协同与鲁棒性能。",

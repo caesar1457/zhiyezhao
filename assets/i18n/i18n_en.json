@@ -71,11 +71,11 @@
     "portfolio__subtitle":"Most recent works",
 
   "portfolio_asap__title": "ASAP/PBHC Whole-Body Control",
-  "portfolio_asap__description": "A whole-body control stack integrating ASAP and PBHC for robust humanoid motion across manipulation and locomotion tasks.",
-  "portfolio_host__title": "HoST",
-  "portfolio_host__description": "A high-performance operational-space tracking/control framework for whole-body behaviors.",
-  "portfolio_tron1a__title": "Tron1A Point-Foot Biped Locomotion",
-  "portfolio_tron1a__description": "Locomotion control and estimation for a point-foot biped platform, focusing on stability and agile gait transitions.",
+  "portfolio_asap__description": "Built on ASAP (Adaptive Skill Acquisition Policy) and PBHC (Physics-Based Hierarchical Control). Complex motions are decomposed into skill primitives with physical constraints; RL + simulation enable precise, stable imitation validated on hardware.",
+  "portfolio_host__title": "HoST: Multi-Posture Standing Control",
+  "portfolio_host__description": "RL + physics-based HoST framework for autonomous standing from diverse postures. Multi-layer rewards and reward curriculum train a policy for stable standing and posture transitions; deployed on real hardware.",
+  "portfolio_tron1a__title": "Tron1A Point-Foot Biped: Complex Terrain Locomotion",
+  "portfolio_tron1a__description": "RL policy trained in physics simulation for balance, gait control, and terrain adaptation on steps and uneven ground with a high-DoF, underactuated system.",
 
     "portfolio2__title":"Leader-Follower Formation Control with MPC",
     "portfolio2__description":"This project implements a leader-follower formation control system using Model Predictive Control (MPC) in MATLAB. It enables multiple robots to track a moving leader while maintaining formation and avoiding obstacles. I developed the core MPC controller and formation logic, ensuring robust coordination in dynamic environments.",
