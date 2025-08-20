@@ -1400,7 +1400,7 @@ img {
 
 /* HoST page specific video grid: 3/2/1 responsive columns */
 .host-gallery {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: start;
 }
 
@@ -1408,6 +1408,8 @@ img {
 .host-gallery .gallery-item .subpage-video {
   aspect-ratio: auto;
 }
+
+/* (Removed) Featured item span to keep uniform layout */
 
 @media screen and (max-width: 1024px) {
   .host-gallery {
@@ -1419,6 +1421,7 @@ img {
   .host-gallery {
     grid-template-columns: 1fr;
   }
+  /* ensure uniform single-column on small screens */
 }
 
 /* Two-column text layout for highlights */
@@ -1499,6 +1502,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Display one specific item at natural video size */
+.gallery-item.natural-size {
+  align-items: flex-start;
+}
+.gallery-item.natural-size .subpage-video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 /* Larger captions for key project pages */

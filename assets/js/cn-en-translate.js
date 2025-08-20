@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     /* 默认语言设置 */
     const lang = localStorage.getItem("lang");
-    const defaultLang = lang ? lang : "en";
+    const defaultLang = lang ? lang : "cn";
 
     // ✅ 设置简历链接（首次加载时）
     updateCVLink(defaultLang);

@@ -1,6 +1,6 @@
 function initI18n() {
     const lang = localStorage.getItem("lang");
-    const defaultLang = lang ? lang : "en";
+    const defaultLang = lang ? lang : "cn";
 
     $("[i18n]").i18n({
         defaultLang: defaultLang,
